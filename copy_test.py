@@ -5,7 +5,6 @@ ids = [98264 + el for el in range(5)]
 
 results = []
 
-
 base_url = "https://berserk.ru/?route=card/card&card_id="
 
 def formating(form_text, closing = "</p>", is_spaced = False, has_limit=True):
@@ -48,7 +47,7 @@ for id in ids:
     rarity = formating("Редкость:", "<img")
     name = formating('<div class="desc-title"><h2>', "</h2>", True)
     description = formating("<div><em>", "</em>", True, False)
-    image = formating('<div class="image"><img src="', '"></div>', has_limit=False)
+    image = formating('<div class="image"><img src="', '"></div>', True, False).replace(" ", "%20")
 
     stats = {
 
