@@ -1,7 +1,7 @@
 import requests
 import schema
 
-ids = [98264 + el for el in range(5)]
+ids = [98264 + el for el in range(201)] #201
 
 results = []
 
@@ -48,6 +48,7 @@ for id in ids:
     name = formating('<div class="desc-title"><h2>', "</h2>", True)
     description = formating("<div><em>", "</em>", True, False)
     image = formating('<div class="image"><img src="', '"></div>', True, False).replace(" ", "%20")
+    number = formating("Номер:")
 
     stats = {
 
@@ -61,7 +62,8 @@ for id in ids:
         "rarity": rarity,
         "name": name,
         "description": description,
-        "image": image
+        "image": image,
+        "number": number
 
     }
 

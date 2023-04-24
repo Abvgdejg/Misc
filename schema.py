@@ -2,52 +2,74 @@ start_part = """
 <html>
 
 <head>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
-<table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    <tr>
-
-        <td>Изображение</td>
-        <td>Номер</td>
-        <td>Название</td>
-        <td>Описание</td>
-        <td>Набор</td>
-        <td>Редкость</td>
-        <td>Стихия</td>
-        <td>Стоимость</td>
-        <td>Статы</td>
-
-    </tr>
+    <div class="container mt-1">
 """
 
 end_part = """
-</table>
+</div>
 </body>
 
 </html>
 
 <style>
+:root {
+  --border-color: #fff;
+}
+body {
 
-table {
-
-    width: 100%;
-    text-align: center;
+    background-color: #000;
 
 }
-td {
+.info_title {
 
-    border: 1px solid #000;
-    padding: 5px;
-    max-width: 20%;
+    border-bottom: 1px solid var(--border-color);
 
 }
 .card_image {
 
-    max-width: 120px;
-    max-height: 220px;
+    max-width: 100%;
+
+}
+.card_image_col {
+
+max-width: 20%;
+border: 1px solid var(--border-color);
+border-radius: 5px;
+padding: 5px;
+
+}
+.card_info_row {
+
+    margin: 0;
+
+}
+.card_data_col {
+
+color: #fff;
+
+}
+.card_title_row {
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+
+}
+.card_info {
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
 
 }
 
@@ -56,57 +78,73 @@ td {
 
 middle_part = ""
 
-parts = []
-
 def combinate(part):
     global middle_part
 
-    middle_part += "<tr> \n"
-     
-    for el in part:
-        if el == part[0]: 
-            middle_part += f"<td><img class='card_image' src={el}></td>"
-            continue
+    middle_part += f"""
+    <div class="row mt-2" style="border: 1px solid #fff; padding: 5px;">     
 
-        middle_part += f"<td>{el}</td>"
+        <div class="col card_image_col">
+            <div class="card_image"><img class="card_image" src="{part["image"]}"></div>
+        </div>
 
-    middle_part += "</tr> \n"
-
-def preparing(data):
-    for vals in data:
-        tmp_part = []
-        
-        tmp_part.append(vals["image"])
-        tmp_part.append(vals["id"])
-        tmp_part.append(vals["name"])
-        tmp_part.append(vals["description"])
-        tmp_part.append(vals["set"])
-        tmp_part.append(vals["rarity"])
-        tmp_part.append(vals["fraction"])
-        tmp_part.append(f'{vals["cost"]["count"]} ({vals["cost"]["quality"]})')
-        tmp_part.append(f'{vals["health"]}:{vals["stamina"]}:{vals["damage"]}')
-        
-
-        parts.append(tmp_part)
-
+        <table class="col card_data_col m-2"><tbody><td>
+            <div class="row card_title_row mb-2">
+                <div class="text-center">{part["name"]}</div>
+                <div class="text-center" style="font-size: 12px;"><i>{part["description"]}</i></div>
+            </div>
+            <div class="row card_info_row"> 
+                <div class="col card_info me-1">
+                    <div class="info_title">№</div>
+                    <div>{part["number"]}</div>
+                </div>
+                
+                <div class="col card_info me-1">
+                    <div class="info_title">Набор</div>
+                    <div>{part["set"]}</div>
+                </div>
+                
+                <div class="col card_info me-1">
+                    <div class="info_title">Стихия</div>
+                    <div>{part["fraction"]}</div>
+                </div>
+                
+                <div class="col card_info me-1">
+                    <div class="info_title">Редкость</div>
+                    <div>{part["rarity"]}</div>
+                </div>
+                
+                <div class="col card_info me-1">
+                    <div class="info_title">Стоимость</div>
+                    <div>{part["cost"]["count"]} ({part["cost"]["quality"]})</div>
+                </div>
+                
+                <div class="col card_info me-1">
+                    <div class="info_title">Здоровье</div>
+                    <div>{part["health"]}</div>
+                </div>
+                
+                <div class="col card_info me-1">
+                    <div class="info_title">Движение</div>
+                    <div>{part["stamina"]}</div>
+                </div>
+                
+                <div class="col card_info">
+                    <div class="info_title">Удар</div>
+                    <div>{part["damage"]}</div>
+                </div>
+            </div>
+        </td></tbody></table>
+    </div>
+    """
+    
 def clear():
     global middle_part
-
-    parts.clear()
     middle_part = ""
 
-# parts.append(["https://berserk.ru/image/data/%D0%91%D0%B5%D1%80%D1%81%D0%B5%D1%80%D0%BA/%D0%92%D0%BE%D0%B9%D0%BD%D0%B0%20%D0%A1%D1%82%D0%B8%D1%85%D0%B8%D0%B9/%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_2023-03-31_181612114.png",
-#             "Кочевник",
-#             "Неисчислимы их армии, что вечно кочуют с места на место, превращая в ничто деревни и города пограничья.",
-#             "Война стихий",
-#             "Частая",
-#             "Степи",
-#             "3 (Серебро)",
-#             "8:2:1-2-3"])
 def crete_index(data):
-    preparing(data)
 
-    for part in parts: combinate(part)
+    for part in data: combinate(part)
 
     valsult = start_part + middle_part + end_part
     open("index_test.html", "w").write(valsult)
