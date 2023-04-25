@@ -1,11 +1,37 @@
 import requests
 import schema
+import sys
+import os
+import json
 
-ids = [98264 + el for el in range(201)] #201
+count = 20
+
+ids = [98264 + el for el in range(count)] #201
 
 results = []
 
+cards = {}
+
+error_count = 0
+
+images_dir = "images/"
+os.makedirs(images_dir, exist_ok=True)
+
+cards_dir = f"{images_dir}cards/"
+os.makedirs(cards_dir, exist_ok=True)
+
 base_url = "https://berserk.ru/?route=card/card&card_id="
+
+def log(text):
+    sys.stdout.write(f'\r{text}')
+    sys.stdout.flush()
+
+def save_image(url, id, card_set: str):
+    img = requests.get(url)
+    card_set_text = card_set.replace(" ", "_").lower()
+    save_path = f"{cards_dir}card__{card_set_text}_{id}.png"
+    open(save_path, "wb").write(img.content)
+    return save_path
 
 def formating(form_text, closing = "</p>", is_spaced = False, has_limit=True):
 
@@ -28,7 +54,9 @@ for id in ids:
 
     r = requests.get(url=url)
 
-    if r.status_code == 404: continue
+    if r.status_code == 404: 
+        error_count += 1
+        continue
 
     health = formating("Здоровье:")
 
@@ -47,8 +75,12 @@ for id in ids:
     rarity = formating("Редкость:", "<img")
     name = formating('<div class="desc-title"><h2>', "</h2>", True)
     description = formating("<div><em>", "</em>", True, False)
-    image = formating('<div class="image"><img src="', '"></div>', True, False).replace(" ", "%20")
     number = formating("Номер:")
+
+    original_image_path = formating('<div class="image"><img src="', '"></div>', True, False).replace(" ", "%20")
+    image = save_image(original_image_path, number, card_set)
+
+    
 
     stats = {
 
@@ -67,55 +99,16 @@ for id in ids:
 
     }
 
+    cards[id] = stats
     results.append(stats)
 
-    # outputs.append(f'| ID: {id}: {name}')
-    # outputs.append(f'| Описание: {description}')
-    # outputs.append(f'| Набор: {card_set}')
-    # outputs.append(f'| Редкость: {rarity}')
-    # outputs.append(f'| Стихия: {fraction}')
-    # outputs.append(f'| Стоимость: {cost["count"]} ({cost["quality"]})')
-    # outputs.append(f'| Статы: {health}:{stamina}:{damage}')
-    # outputs.append(f'| Картинка: {image}')
+    log(f'Complite: {len(results)}/{count} {f"Errors: {error_count}" if error_count != 0 else ""}')
 
 
-max_len = 0
+log(f'\nCreate json file')
+open("cards.json", "w").write(json.dumps(cards, ensure_ascii=False, indent=4))
 
-for res in results:
-
-    outputs = []
-
-    outputs.append(f'| ID: {res["id"]}: {res["name"]}')
-    outputs.append(f'| Описание: {res["description"]}')
-    outputs.append(f'| Набор: {res["set"]}')
-    outputs.append(f'| Редкость: {res["rarity"]}')
-    outputs.append(f'| Стихия: {res["fraction"]}')
-    outputs.append(f'| Стоимость: {res["cost"]["count"]} ({res["cost"]["quality"]})')
-    outputs.append(f'| Статы: {res["health"]}:{res["stamina"]}:{res["damage"]}')
-    outputs.append(f'| Картинка: {res["image"]}')
-
-    for out in outputs:
-        if len(out) > max_len: max_len = len(out)
-    
-max_len = max_len + 1
-
-print("="*(max_len+1))
-for res in results:
-
-    outputs = []
-    
-    outputs.append(f'| ID: {res["id"]}: {res["name"]}')
-    outputs.append(f'| Описание: {res["description"]}')
-    outputs.append(f'| Набор: {res["set"]}')
-    outputs.append(f'| Редкость: {res["rarity"]}')
-    outputs.append(f'| Стихия: {res["fraction"]}')
-    outputs.append(f'| Стоимость: {res["cost"]["count"]} ({res["cost"]["quality"]})')
-    outputs.append(f'| Статы: {res["health"]}:{res["stamina"]}:{res["damage"]}')
-    outputs.append(f'| Картинка: {res["image"]}')
-    
-    for out in outputs:
-        tmp_len = max_len - len(out)
-        print(out + " "*tmp_len + "|")
-    print("="*(max_len+1))
-
+log(f'\nCreate index file')
 schema.crete_index(results)
+
+log(f'\nComplited \n')

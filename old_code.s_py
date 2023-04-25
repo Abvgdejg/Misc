@@ -1,0 +1,53 @@
+
+
+
+    
+
+    # outputs.append(f'| ID: {id}: {name}')
+    # outputs.append(f'| Описание: {description}')
+    # outputs.append(f'| Набор: {card_set}')
+    # outputs.append(f'| Редкость: {rarity}')
+    # outputs.append(f'| Стихия: {fraction}')
+    # outputs.append(f'| Стоимость: {cost["count"]} ({cost["quality"]})')
+    # outputs.append(f'| Статы: {health}:{stamina}:{damage}')
+    # outputs.append(f'| Картинка: {image}')
+
+
+# max_len = 0
+
+# for res in results:
+
+#     outputs = []
+
+#     outputs.append(f'| ID: {res["id"]}: {res["name"]}')
+#     outputs.append(f'| Описание: {res["description"]}')
+#     outputs.append(f'| Набор: {res["set"]}')
+#     outputs.append(f'| Редкость: {res["rarity"]}')
+#     outputs.append(f'| Стихия: {res["fraction"]}')
+#     outputs.append(f'| Стоимость: {res["cost"]["count"]} ({res["cost"]["quality"]})')
+#     outputs.append(f'| Статы: {res["health"]}:{res["stamina"]}:{res["damage"]}')
+#     outputs.append(f'| Картинка: {res["image"]}')
+
+#     for out in outputs:
+#         if len(out) > max_len: max_len = len(out)
+    
+# max_len = max_len + 1
+
+# print("="*(max_len+1))
+# for res in results:
+
+#     outputs = []
+    
+#     outputs.append(f'| ID: {res["id"]}: {res["name"]}')
+#     outputs.append(f'| Описание: {res["description"]}')
+#     outputs.append(f'| Набор: {res["set"]}')
+#     outputs.append(f'| Редкость: {res["rarity"]}')
+#     outputs.append(f'| Стихия: {res["fraction"]}')
+#     outputs.append(f'| Стоимость: {res["cost"]["count"]} ({res["cost"]["quality"]})')
+#     outputs.append(f'| Статы: {res["health"]}:{res["stamina"]}:{res["damage"]}')
+#     outputs.append(f'| Картинка: {res["image"]}')
+    
+#     for out in outputs:
+#         tmp_len = max_len - len(out)
+#         print(out + " "*tmp_len + "|")
+#     print("="*(max_len+1))
