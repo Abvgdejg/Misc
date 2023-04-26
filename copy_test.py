@@ -113,6 +113,12 @@ log(f'\nCreate index file')
 schema.crete_index(results)
 
 log(f'\nComplited \n')
-
-deck = Deck([results[1], results[2], results[1]], "Best deck")
+ 
+deck = Deck([results[1], results[1],results[1],
+             results[3],results[3],results[3],
+             results[4],results[4],results[4],
+             results[7],results[7],results[9],
+             results[12],results[15],results[15]], "Best deck")
+copyed_deck = Deck.deck_from_code(deck.create_code(), results)
 log(f"{deck}\n")
+log(f"{copyed_deck}\n")
