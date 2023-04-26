@@ -1,0 +1,325 @@
+{
+    "98264": {
+        "id": 98264,
+        "cost": {
+            "count": "3",
+            "quality": "Серебро"
+        },
+        "health": "8",
+        "stamina": 2,
+        "damage": "1-2-3",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Кочевник",
+        "description": "Неисчислимы их армии, что вечно кочуют с места на место, превращая в ничто деревни и города пограничья.",
+        "image": "images/cards/card__война_стихий_1.png",
+        "number": "1"
+    },
+    "98266": {
+        "id": 98266,
+        "cost": {
+            "count": "3",
+            "quality": "Серебро"
+        },
+        "health": "6",
+        "stamina": 2,
+        "damage": "1-2-2",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Кшар",
+        "description": null,
+        "image": "images/cards/card__война_стихий_2.png",
+        "number": "2"
+    },
+    "98267": {
+        "id": 98267,
+        "cost": {
+            "count": "4",
+            "quality": "Серебро"
+        },
+        "health": "7",
+        "stamina": 1,
+        "damage": "1-1-2",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Волхв",
+        "description": null,
+        "image": "images/cards/card__война_стихий_3.png",
+        "number": "3"
+    },
+    "98268": {
+        "id": 98268,
+        "cost": {
+            "count": "4",
+            "quality": "Серебро"
+        },
+        "health": "8",
+        "stamina": 1,
+        "damage": "1-2-2",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Редкая",
+        "name": "Гиррит",
+        "description": null,
+        "image": "images/cards/card__война_стихий_4.png",
+        "number": "4"
+    },
+    "98269": {
+        "id": 98269,
+        "cost": {
+            "count": "4",
+            "quality": "Серебро"
+        },
+        "health": "7",
+        "stamina": 1,
+        "damage": "1-1-2",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Ост",
+        "description": "Пёстрые одежды достались им от беспечных кандийских караванщиков.",
+        "image": "images/cards/card__война_стихий_5.png",
+        "number": "5"
+    },
+    "98270": {
+        "id": 98270,
+        "cost": {
+            "count": "4",
+            "quality": "Серебро"
+        },
+        "health": "9",
+        "stamina": 1,
+        "damage": "1-1-2",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Пустотник",
+        "description": null,
+        "image": "images/cards/card__война_стихий_6.png",
+        "number": "6"
+    },
+    "98271": {
+        "id": 98271,
+        "cost": {
+            "count": "4",
+            "quality": "Серебро"
+        },
+        "health": "8",
+        "stamina": 2,
+        "damage": "2-2-3",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Необычная",
+        "name": "Смотритель стойла",
+        "description": null,
+        "image": "images/cards/card__война_стихий_7.png",
+        "number": "7"
+    },
+    "98272": {
+        "id": 98272,
+        "cost": {
+            "count": "4",
+            "quality": "Серебро"
+        },
+        "health": "7",
+        "stamina": 2,
+        "damage": "2-2-3",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Необычная",
+        "name": "Степной волколак",
+        "description": "Волколаки Великих степей... Вечно голодные, истекающие слюной злобные твари, охотящиеся стаями.",
+        "image": "images/cards/card__война_стихий_8.png",
+        "number": "8"
+    },
+    "98273": {
+        "id": 98273,
+        "cost": {
+            "count": "4",
+            "quality": "Серебро"
+        },
+        "health": "7",
+        "stamina": 1,
+        "damage": "1-1-2",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Хозяйка прайда",
+        "description": "Гонимый раскалённым ветром, песок пустыни Дзара хлещет подобно львиным когтям.",
+        "image": "images/cards/card__война_стихий_9.png",
+        "number": "9"
+    },
+    "98274": {
+        "id": 98274,
+        "cost": {
+            "count": "5",
+            "quality": "Серебро"
+        },
+        "health": "7",
+        "stamina": 1,
+        "damage": "1-1-2",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Аколит Дзара",
+        "description": "Не один аколит Дзара превратился в живой факел, ища власти над огненной стихией.",
+        "image": "images/cards/card__война_стихий_10.png",
+        "number": "10"
+    },
+    "98275": {
+        "id": 98275,
+        "cost": {
+            "count": "5",
+            "quality": "5"
+        },
+        "health": "9",
+        "stamina": 1,
+        "damage": "2-4-5",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Змееглав",
+        "description": "В пустыне Сота издревле существовал культ служителей Змея. Тот, кто постигал высшие заповеди учения, начинал обретать черты своего божества.",
+        "image": "images/cards/card__война_стихий_11.png",
+        "number": "11"
+    },
+    "98276": {
+        "id": 98276,
+        "cost": {
+            "count": "5",
+            "quality": "5"
+        },
+        "health": "11",
+        "stamina": 1,
+        "damage": "2-3",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Необычная",
+        "name": "Кабаний наездник",
+        "description": null,
+        "image": "images/cards/card__война_стихий_12.png",
+        "number": "12"
+    },
+    "98277": {
+        "id": 98277,
+        "cost": {
+            "count": "5",
+            "quality": "5"
+        },
+        "health": "10",
+        "stamina": 1,
+        "damage": "3-3-4",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Орк",
+        "description": "Орки Великих степей... Их орды из года в год штурмуют неприступные скалы Лант-Мора.",
+        "image": "images/cards/card__война_стихий_13.png",
+        "number": "13"
+    },
+    "98278": {
+        "id": 98278,
+        "cost": {
+            "count": "5",
+            "quality": "Серебро"
+        },
+        "health": "8",
+        "stamina": null,
+        "damage": "2-3-3",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Необычная",
+        "name": "Пустынный кондор",
+        "description": null,
+        "image": "images/cards/card__война_стихий_14.png",
+        "number": "14"
+    },
+    "98279": {
+        "id": 98279,
+        "cost": {
+            "count": "5",
+            "quality": "Серебро"
+        },
+        "health": "10",
+        "stamina": 1,
+        "damage": "2-3-4",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Необычная",
+        "name": "Рубаки Холверта",
+        "description": null,
+        "image": "images/cards/card__война_стихий_15.png",
+        "number": "15"
+    },
+    "98280": {
+        "id": 98280,
+        "cost": {
+            "count": "5",
+            "quality": "Серебро"
+        },
+        "health": "10",
+        "stamina": 1,
+        "damage": "1-2-3",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Санкторум",
+        "description": "Прикрыться щитом способен любой, однако в руках настоящего мастера щит превращается в непробиваемую стену.",
+        "image": "images/cards/card__война_стихий_16.png",
+        "number": "16"
+    },
+    "98281": {
+        "id": 98281,
+        "cost": {
+            "count": "6",
+            "quality": "6"
+        },
+        "health": "8",
+        "stamina": null,
+        "damage": "1",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Частая",
+        "name": "Арбалетчик",
+        "description": null,
+        "image": "images/cards/card__война_стихий_17.png",
+        "number": "17"
+    },
+    "98282": {
+        "id": 98282,
+        "cost": {
+            "count": "6",
+            "quality": "Серебро"
+        },
+        "health": "11",
+        "stamina": 2,
+        "damage": "2-3-4",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Необычная",
+        "name": "Килсус",
+        "description": "Ездовой ящер, быть может, и не так быстр, как лошадь, зато куда более опасен.",
+        "image": "images/cards/card__война_стихий_18.png",
+        "number": "18"
+    },
+    "98283": {
+        "id": 98283,
+        "cost": {
+            "count": "7",
+            "quality": "Серебро"
+        },
+        "health": "10",
+        "stamina": 1,
+        "damage": "1-2-3",
+        "fraction": "Степи",
+        "set": "Война стихий",
+        "rarity": "Необычная",
+        "name": "Щитоносец",
+        "description": null,
+        "image": "images/cards/card__война_стихий_19.png",
+        "number": "19"
+    }
+}

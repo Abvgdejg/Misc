@@ -3,6 +3,7 @@ import schema
 import sys
 import os
 import json
+from Classes import Card, Deck
 
 count = 20
 
@@ -80,7 +81,7 @@ for id in ids:
     original_image_path = formating('<div class="image"><img src="', '"></div>', True, False).replace(" ", "%20")
     image = save_image(original_image_path, number, card_set)
 
-    
+    card = Card(id, name, description, card_set, number, fraction, rarity, cost, health, stamina, damage, image)
 
     stats = {
 
@@ -100,7 +101,7 @@ for id in ids:
     }
 
     cards[id] = stats
-    results.append(stats)
+    results.append(card)
 
     log(f'Complite: {len(results)}/{count} {f"Errors: {error_count}" if error_count != 0 else ""}')
 
@@ -112,3 +113,6 @@ log(f'\nCreate index file')
 schema.crete_index(results)
 
 log(f'\nComplited \n')
+
+deck = Deck([results[1], results[2], results[1]], "Best deck")
+log(f"{deck}\n")

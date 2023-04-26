@@ -85,53 +85,53 @@ def combinate(part):
     <div class="row mt-2" style="border: 1px solid #fff; padding: 5px;">     
 
         <div class="col card_image_col">
-            <div class="card_image"><img class="card_image" src="{part["image"]}"></div>
+            <div class="card_image"><img class="card_image" src="{part.image}"></div>
         </div>
 
         <table class="col card_data_col m-2"><tbody><td>
             <div class="row card_title_row mb-2">
-                <div class="text-center">{part["name"]}</div>
-                <div class="text-center" style="font-size: 12px;"><i>{part["description"]}</i></div>
+                <div class="text-center">{part.name}</div>
+                <div class="text-center" style="font-size: 12px;"><i>{part.description}</i></div>
             </div>
             <div class="row card_info_row"> 
                 <div class="col card_info me-1">
                     <div class="info_title">№</div>
-                    <div>{part["number"]}</div>
+                    <div>{part.number}</div>
                 </div>
                 
                 <div class="col card_info me-1">
                     <div class="info_title">Набор</div>
-                    <div>{part["set"]}</div>
+                    <div>{part.set}</div>
                 </div>
                 
                 <div class="col card_info me-1">
                     <div class="info_title">Стихия</div>
-                    <div>{part["fraction"]}</div>
+                    <div>{part.fraction}</div>
                 </div>
                 
                 <div class="col card_info me-1">
                     <div class="info_title">Редкость</div>
-                    <div>{part["rarity"]}</div>
+                    <div>{part.rarity}</div>
                 </div>
                 
                 <div class="col card_info me-1">
                     <div class="info_title">Стоимость</div>
-                    <div>{part["cost"]["count"]} ({part["cost"]["quality"]})</div>
+                    <div>{part.cost["count"]} ({part.cost["quality"]})</div>
                 </div>
                 
                 <div class="col card_info me-1">
                     <div class="info_title">Здоровье</div>
-                    <div>{part["health"]}</div>
+                    <div>{part.health}</div>
                 </div>
                 
                 <div class="col card_info me-1">
                     <div class="info_title">Движение</div>
-                    <div>{part["stamina"]}</div>
+                    <div>{part.stamina}</div>
                 </div>
                 
                 <div class="col card_info">
                     <div class="info_title">Удар</div>
-                    <div>{part["damage"]}</div>
+                    <div>{part.damage}</div>
                 </div>
             </div>
         </td></tbody></table>
