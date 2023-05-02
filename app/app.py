@@ -26,4 +26,12 @@ def card_page(card_id):
 def send_image(path):
     return send_from_directory('static/images', path)
 
+@app.route('/css/<path:path>')
+def send_css(path):
+    return send_from_directory('static/css', path)
+
+@app.route('/js/<path:path>')
+def send_js(path):
+    return send_from_directory('static/js', path)
+
 app.run(port="5555", debug=True)
