@@ -1,21 +1,384 @@
 {% extends 'base_layout.html' %}
 {% block content %}
 
-        <div class="container mt-1">
-
-            {% for card in cards %}
     
-               
-        
-                <div class="card_image_col">
-                    <div class="card_image"><a href="/card/{{ card.id }}"><img class="card_image" src={{ card.image }}></a></div>
-                </div>
-        
-            
+        <div id="body-wrapper">
+        <div class="container">
 
-            {% endfor %}
-            
+            <h1 role="heading" aria-level="1">Cards</h1>
+
+                <div class="row">
+                <div class="col-sm-4 col-md-3">
+                <form id="search-cards" action="/cards" method="get">
+                <div id="cardsearch-wrapper">
+                <div class="pad heading push-b push-more">
+                <div class="float-r" style="margin-top: -5px;">
+                <a id="deckbuild-top" href="#current-deck-wrapper" class="btn btn-sm btn-info visible-inline-xs" style="display: none !important;">View Deck</a>
+                </div>
+                <h4 class="space space-none">Search</h4>
+                </div>
+                <div>
+                <input id="cardsearch-text" name="Query" type="text" class="form-control" placeholder="Search for a card" onfocus="this.select();" autofocus>
+                </div>
+                <div class="push-b">
+                <label class="checkbox-inline">
+                <input id="SearchName" name="SearchName" type="checkbox" value="true"> Name
+                </label>
+                <label class="checkbox-inline">
+                <input id="SearchText" name="SearchText" type="checkbox" value="true"> Text
+                </label>
+                <label class="checkbox-inline">
+                <input id="SearchRace" name="SearchRace" type="checkbox" value="true"> Subtype
+                </label>
+                </div>
+                <div id="more-card-filters" class="collapse filter-toggler-target">
+                <div id="cardsearch-filters-wrapper" style>
+                <div class="row">
+                <div class="col-xs-12">
+                <h5 class="push-t push-none">Faction</h5>
+                <div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-fire" title="Faction Fire"><input name="Factions" type="checkbox" value="fire"><span></span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-time" title="Faction Time"><input name="Factions" type="checkbox" value="time"><span></span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-justice" title="Faction Justice"><input name="Factions" type="checkbox" value="justice"><span></span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-primal" title="Faction Primal"><input name="Factions" type="checkbox" value="primal"><span></span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-shadow" title="Faction Shadow"><input name="Factions" type="checkbox" value="shadow"><span></span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-multi" title="Faction Multi"><input name="Factions" type="checkbox" value="multi"><span></span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-none" title="Faction None"><input name="Factions" type="checkbox" value="none"><span></span></label>
+                </div>
+                </div>
+                </div>
+                <div class="col-xs-12">
+                <h5 class="push-t push-none">Power Cost</h5>
+                <div class="push-b push-more">
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="0 Cost"><input name="PowerCosts" type="checkbox" value="0"><span>0</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="1 Cost"><input name="PowerCosts" type="checkbox" value="1"><span>1</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="2 Cost"><input name="PowerCosts" type="checkbox" value="2"><span>2</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="3 Cost"><input name="PowerCosts" type="checkbox" value="3"><span>3</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="4 Cost"><input name="PowerCosts" type="checkbox" value="4"><span>4</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="5 Cost"><input name="PowerCosts" type="checkbox" value="5"><span>5</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="6 Cost"><input name="PowerCosts" type="checkbox" value="6"><span>6</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="7 Cost"><input name="PowerCosts" type="checkbox" value="7"><span>7</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-general" title="8+ Cost"><input name="PowerCosts" type="checkbox" value="8"><span>8+</span></label>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-xs-12">
+                <h5 class="push-t push-none">Attack</h5>
+                <div class="push-b push-more">
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="0 Attack"><input name="AttackCosts" type="checkbox" value="0"><span>0</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="1 Attack"><input name="AttackCosts" type="checkbox" value="1"><span>1</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="2 Attack"><input name="AttackCosts" type="checkbox" value="2"><span>2</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="3 Attack"><input name="AttackCosts" type="checkbox" value="3"><span>3</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="4 Attack"><input name="AttackCosts" type="checkbox" value="4"><span>4</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="5 Attack"><input name="AttackCosts" type="checkbox" value="5"><span>5</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="6 Attack"><input name="AttackCosts" type="checkbox" value="6"><span>6</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="7 Attack"><input name="AttackCosts" type="checkbox" value="7"><span>7</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-attack" title="8+ Attack"><input name="AttackCosts" type="checkbox" value="8"><span>8+</span></label>
+                </div>
+                </div>
+                </div>
+                <div class="col-xs-12">
+                <h5 class="push-t push-none">Health</h5>
+                <div class="push-b push-more">
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="0 Health"><input name="HealthCosts" type="checkbox" value="0"><span>0</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="1 Health"><input name="HealthCosts" type="checkbox" value="1"><span>1</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="2 Health"><input name="HealthCosts" type="checkbox" value="2"><span>2</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="3 Health"><input name="HealthCosts" type="checkbox" value="3"><span>3</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="4 Health"><input name="HealthCosts" type="checkbox" value="4"><span>4</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="5 Health"><input name="HealthCosts" type="checkbox" value="5"><span>5</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="6 Health"><input name="HealthCosts" type="checkbox" value="6"><span>6</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="7 Health"><input name="HealthCosts" type="checkbox" value="7"><span>7</span></label>
+                </div>
+                <div class="filter-checkbox-image">
+                <label class="filter-checkbox-health" title="8+ Health"><input name="HealthCosts" type="checkbox" value="8"><span>8+</span></label>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-xs-12">
+                <h5 class="push-t push-none">Type</h5>
+                <div class="push-b push-more">
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="1"><i class="fa fa-check"></i> Power</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="2"><i class="fa fa-check"></i> Unit</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="4"><i class="fa fa-check"></i> Spell</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="5"><i class="fa fa-check"></i> Fast Spell</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="7"><i class="fa fa-check"></i> Weapon</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="6"><i class="fa fa-check"></i> Relic Weapon</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="9"><i class="fa fa-check"></i> Relic</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="8"><i class="fa fa-check"></i> Curse</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="10"><i class="fa fa-check"></i> Cursed Relic</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label><input name="Types" type="checkbox" value="11"><i class="fa fa-check"></i> Site</label>
+                </div>
+                </div>
+                </div>
+                <div class="col-xs-12">
+                <h5 class="push-t push-none">Rarity</h5>
+                <div class="push-b push-more">
+                <div class="cardsearch-filter">
+                <label class="text-none"><input name="Rarities" type="checkbox" value="1"><i class="fa fa-check"></i><span class="rarity-icon"></span> None</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label class="text-common"><input name="Rarities" type="checkbox" value="2"><i class="fa fa-check"></i><span class="rarity-icon rarity-common"></span> Common</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label class="text-uncommon"><input name="Rarities" type="checkbox" value="3"><i class="fa fa-check"></i> <span class="rarity-icon rarity-uncommon"></span> Uncommon</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label class="text-rare"><input name="Rarities" type="checkbox" value="4"><i class="fa fa-check"></i><span class="rarity-icon rarity-rare"></span> Rare</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label class="text-promo"><input name="Rarities" type="checkbox" value="6"><i class="fa fa-check"></i><span class="rarity-icon rarity-promo"></span> Promo</label>
+                </div>
+                <div class="cardsearch-filter">
+                <label class="text-legendary"><input name="Rarities" type="checkbox" value="5"><i class="fa fa-check"></i> <span class="rarity-icon rarity-legendary"></span> Legendary</label>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-xs-12 push-b push-more">
+                <h5 class="push-t push-none">Expeditions</h5>
+                <select id="Expedition" name="Expedition" class="form-control">
+                <option value>Any</option>
+                <option value="ofWkOMI7up4">Expedition #28: January 18, 2023</option>
+                <option value="jPdlzoW4HLk">Expedition #27: May 11, 2022 to January 18, 2023</option>
+                <option value="UtZ8xvaQL9A">Expedition #26: March 2 to May 11, 2022</option>
+                <option value="GGeP5nahEKc">Expedition #25: February 2 to March 2, 2022</option>
+                <option value="4ge5i-xMrtQ">Expedition #24: November 11, 2021 to February 2, 2022</option>
+                <option value="W1jRphyWyCo">Expedition #23: July 21 to November 11, 2021</option>
+                <option value="z_mBJrz2AUE">Expedition #22: May 18 to July 21, 2021</option>
+                <option value="DvUrfwO_S7c">Expedition #21: April 20 to May 18, 2021</option>
+                <option value="lyXlNFQPRWw">Expedition #20: March 23 to April 20, 2021</option>
+                <option value="lx8ZKiEkFvc">Expedition #19: February 24 to March 23, 2021</option>
+                <option value="OgXMu51h_ZE">Expedition #18: February 11-23, 2021</option>
+                <option value="P6VWOMJHxT4">Expedition #17: January 8 to February 11, 2021</option>
+                <option value="fajJFcJk8rY">Expedition #16: December 15, 2020 to January 8, 2021</option>
+                <option value="ox2Wqo0dRX8">Expedition #15: November 2 to December 14, 2020</option>
+                <option value="KpXhxtaFWpc">Expedition #14: September 1 to November 2, 2020</option>
+                <option value="BIfZwcfPyLw">Expedition #13: August 10-31, 2020</option>
+                <option value="W3J-EazY5Cs">Expedition #12: June 24 to August 10, 2020</option>
+                <option value="1sVs9QbrRnc">Expedition #11: May 12 to June 24, 2020</option>
+                <option value="vCFFyIAs8_M">Expedition #10: May 4-12, 2020</option>
+                <option value="wGi8m0WGywQ">Expedition #9: March 30 to May 4, 2020</option>
+                <option value="BNirnYXbFDE">Expedition #8: March 10-30, 2020</option>
+                <option value="-wxpSAjKkXc">Expedition #7: February 11 to March 9, 2020</option>
+                <option value="KKhKH8-6tww">Expedition #6: December 19, 2019 to February 11, 2020</option>
+                <option value="IEhhuGYwajg">Expedition #5: December 2-19, 2019</option>
+                <option value="8hjasS7kktY">Expedition #4: November 19 to December 2, 2019</option>
+                <option value="F_lm1j2SBI8">Expedition #3: October 7 to November 19, 2019</option>
+                <option value="7nLi0a7F48g">Expedition #2: August 5 to October 6, 2019</option>
+                <option value="3IQrl3HxGt4">Expedition #1: July 1 to August 5, 2019</option>
+                </select>
+                </div>
+                <div class="col-xs-12 push-b push-more">
+                <h5 class="push-t push-none">Vaults/Reprints</h5>
+                <select id="DraftPack" name="DraftPack" class="form-control">
+                <option value>Any</option>
+                <option value="bYZWWlGlJlo">Behemoths of Thera Reprints: From January 18, 2023</option>
+                <option value="jMuyIWw7E7w">Behemoths of Thera Expedition Vault: From January 18, 2023</option>
+                <option value="YT-SyIlcd5U">Unleashed Expedition Vault: From May 11, 2022</option>
+                <option value="gvT-7AwGzno">Unleashed Reprints: From May 11, 2022</option>
+                <option value="JDIGo8pcy0Q">Valley Beyond Draft Pack: March 2 to May 11, 2022</option>
+                <option value="hzcEchBmEuk">Cold Hunt Draft Pack: November 11, 2021 to March 2, 2022</option>
+                <option value="vyHc7H-r7q8">Hour of Glass Draft Pack: August 4 to November 11, 2021</option>
+                <option value="qviy7EElKrE">Revelations Draft Pack: May 18 to August 4, 2021</option>
+                <option value="GhipJNFR-qI">Stormbreak Draft Pack: April 20 to May 18, 2021</option>
+                <option value="DnDtjeZlTyU">Buried Memories Draft Pack: February 24 to April 20, 2021</option>
+                <option value="rjadZ1WChYI">Empire of Glass Draft Pack v2: January 8 to February 23, 2021</option>
+                <option value="PhluW7gf3_0">Empire of Glass Draft Pack: December 14, 2020 to January 8, 2021</option>
+                <option value="mdCKhnQ9jjU">Bastion Rising Draft Pack: November 2 to December 14, 2020</option>
+                <option value="foouT79ICaY">Argent Depths Draft Pack v2: August 10 to November 2, 2020</option>
+                <option value="EzTPMyjJgk8">Argent Depths Draft Pack: June 24 to August 10, 2020</option>
+                <option value="4-m0hUyyIGU">Shadow of the Spire Draft Pack: May 12 to June 24, 2020</option>
+                <option value="cT202go5Tlk">Whispers of the Throne Draft Pack: March 30 to May 12, 2020</option>
+                <option value="GszPWoyQLFI">Echoes of Eternity Draft Pack: February 11 to March 30, 2020</option>
+                <option value="MkKj0cJu_mA">Echoes of Eternity Draft Preview: February 4-11, 2020</option>
+                <option value="q3FbHFRGOcI">The Flame of Xulta Draft Pack v2: December 2, 2019 to February 4, 2020</option>
+                <option value="9svgKU5GDOs">The Flame of Xulta Draft Pack: September 26 to December 2, 2019</option>
+                <option value="TT650AV4AmU">Trials of Grodov Draft Pack: July 31 to September 26, 2019</option>
+                <option value="yHgQekhUV5s">Dark Frontier Draft Pack: May 9 to July 31, 2019</option>
+                <option value="8kDJhIIiWPY">Homecoming Draft Pack: April 4 to May 9, 2019</option>
+                <option value="68YREfoADOA">Defiance Draft Pack: December 13, 2018 to April 4, 2019</option>
+                <option value="_bvhqXwTY2M">The Fall of Argenport Draft Pack: June 28 to December 13, 2018</option>
+                </select>
+                </div>
+                <div class="col-xs-12 push-b push-more">
+                <h5 class="push-t push-none">
+                Card Set
+                <span style="font-family: sans-serif !important; font-weight: normal !important; float: right; margin-top: -5px;">
+                <input id="cardsearch-draftpack-include" name="DraftPackInclude" data-toggle="toggle" data-on="Show Full Set Also" data-off="Inclusive" type="checkbox" data-size="mini" data-width="120">
+                </span>
+                </h5>
+                <select id="CardSet" name="CardSet" class="form-control" multiple style="width: 100%;">
+                <optgroup label="Set">
+                <option value="14">Behemoths of Thera [Set14]</option>
+                <option value="13">Unleashed [Set13]</option>
+                <option value="12">Cold Hunt [Set12]</option>
+                <option value="11">Revelations [Set11]</option>
+                <option value="10">Empire of Glass [Set10]</option>
+                <option value="9">Argent Depths [Set9]</option>
+                <option value="8">Echoes of Eternity [Set8]</option>
+                <option value="7">The Flame of Xulta [Set7]</option>
+                <option value="6">Dark Frontier [Set6]</option>
+                <option value="5">Defiance [Set5]</option>
+                <option value="4">The Fall of Argenport [Set4]</option>
+                <option value="3">The Dusk Road [Set3]</option>
+                <option value="2">Omens of the Past [Set2]</option>
+                <option value="1">The Empty Throne [Set1]</option>
+                </optgroup>
+                <optgroup label="Mini-Sets/Campaigns">
+                <option value="1145">The Devouring [Set1145]</option>
+                <option value="1135">Enter the Arcanum [Set1135]</option>
+                <option value="1125">Valley Beyond [Set1125]</option>
+                <option value="1115">Hour of Glass [Set1115]</option>
+                <option value="1107">Stormbreak [Set1107]</option>
+                <option value="1105">Buried Memories [Set1105]</option>
+                <option value="1097">Bastion Rising [Set1097]</option>
+                <option value="1095">Awakening [Set1095]</option>
+                <option value="1087">Shadow of the Spire [Set1087]</option>
+                <option value="1085">Whispers of the Throne [Set1085]</option>
+                <option value="1007">Promises by Firelight [Set1007]</option>
+                <option value="1006">Trials of Grodov [Set1006]</option>
+                <option value="1005">Homecoming [Set1005]</option>
+                <option value="1004">Into Shadow [Set1004]</option>
+                <option value="1003">Dead Reckoning [Set1003]</option>
+                <option value="1002">The Tale of Horus Traver [Set1002]</option>
+                <option value="1001">Jekk's Bounty [Set1001]</option>
+                </optgroup>
+                </select>
+                </div>
+                </div>
+                </div>
+                </div>
+                <button type="button" class="filter-toggler collapsed btn btn-info btn-block" data-toggle="collapse" data-target="#more-card-filters" aria-expanded="false">
+                <i class="fa fa-filter"></i> More Filters
+                </button>
+                </div>
+                <div id="apply-filters-wrapper" class="push-v">
+                <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-search"></i> Apply Filters</button>
+                </div>
+                </form>
+                </div>
+
+                <div class="col-sm-8 col-md-9">
+                    <div class="pad heading push-b push-more">
+                    <div class="float-r" style="margin-top: -5px;">
+                    <a href="/cards?cardview=false" class="btn btn-primary btn-sm">Switch to Table List</a>
+                    </div>
+                    <h4 class="space space-none">Cards</h4>
+                    </div>
+                    <div class="card-search-results row">
+                    <div class="col-xs-12 align-r">
+                    <ul class="pagination pagination-sm push-b push-more push-only"><li><span class="pagination-info">1-32 of 4154</span></li><li class="active"><a href="/cards/?p=1">1</a></li><li><a href="/cards/?p=2">2</a></li><li><a href="/cards/?p=3">3</a></li><li><a href="/cards/?p=4">4</a></li><li><a href="/cards/?p=5">5</a></li><li><a href="/cards/?p=6">6</a></li><li><a href="/cards/?p=7">7</a></li><li><a href="/cards/?p=2" title="Go to next page"><span class="fa fa-chevron-right"></span></a></li><li><a href="/cards/?p=130" title="Go to last page"><span class="fa fa-step-forward"></span></a></li></ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        {% for card in cards %}
+
+        
+
+                        <!-- <div class="card_image_col">
+                            <div class="card_image"><a href="/card/{{ card.id }}"><img class="card_image" src={{ card.image }}></a></div>
+                        </div> -->
+
+                        <div class="card-search-item col-lg-3 col-sm-4 col-xs-6 add-card-main element-relative">
+                            <div class="card-search-cardview-image">
+                                <a href="/card/{{ card.id }}"><img class="b-lazy lazyload img-responsive" src={{ card.image }} alt="" height="660" width="416"></a>
+                            </div>
+                        </div>
+
+                    
+                    {% endfor %}
+
         </div>
+    </div>
+</div>
+</div>
+</div>
+        
         
 {% endblock %}
     
