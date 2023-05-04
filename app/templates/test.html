@@ -1,0 +1,33 @@
+<html>
+
+<body>
+
+    <input class="text" type="text">
+    <input class="res" type="text">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</body>
+
+<script>
+
+text_field = document.getElementsByClassName("text")[0];
+text_field.addEventListener("change", send);
+
+function send() {
+post_text = text_field.value
+$.ajax({
+    url: '/test/post',         /* Куда отправить запрос */
+    method: 'get',             /* Метод запроса (post или get) */
+    dataType: 'html',          /* Тип данных в ответе (xml, json, script, html). */
+    data: {text: post_text},     /* Данные передаваемые в массиве */
+    success: function(data){ 
+        res_field = document.getElementsByClassName("res")[0]; /* функция которая будет выполнена после успешного запроса.  */
+	    res_field.value = data; /* В переменной data содержится ответ от index.php. */
+    }
+});
+}
+
+
+
+</script>
+
+</html>

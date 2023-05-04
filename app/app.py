@@ -1,4 +1,4 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, request
 import lib.card_base as cards
 
 
@@ -33,5 +33,15 @@ def send_css(path):
 @app.route('/js/<path:path>')
 def send_js(path):
     return send_from_directory('static/js', path)
+
+@app.route('/test')
+def test():
+    return render_template("test.html")
+
+@app.route('/test/post', methods=["GET", "POST"])
+def test_post():
+    
+
+    return request.args.get('text') * 2
 
 app.run(port="5555", debug=True)
