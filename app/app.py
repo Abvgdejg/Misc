@@ -34,6 +34,10 @@ def send_css(path):
 def send_js(path):
     return send_from_directory('static/js', path)
 
+@app.route('/fonts/<path:path>')
+def send_font(path):
+    return send_from_directory('static/fonts', path)
+
 @app.route('/test')
 def test():
     return render_template("test.html")

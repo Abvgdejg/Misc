@@ -10,7 +10,7 @@
 <script>
 
 text_field = document.getElementsByClassName("text")[0];
-text_field.addEventListener("change", send);
+text_field.addEventListener("input", send);
 
 function send() {
 post_text = text_field.value
