@@ -44,8 +44,8 @@ def test():
 
 @app.route('/test/post', methods=["GET", "POST"])
 def test_post():
-    
-
-    return request.args.get('text') * 2
+    arr = request.args.get("factions").split(",")
+    # for a in (request.args.get("factions")): arr.append(a)
+    return arr
 
 app.run(port="5555", debug=True)

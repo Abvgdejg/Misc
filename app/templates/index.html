@@ -9,7 +9,7 @@
 
                 <div class="row">
                 <div class="col-sm-4 col-md-3">
-                <form id="search-cards" action="/cards" method="get">
+                <form id="search-cards" action="/test/post" method="get">
                 <div id="cardsearch-wrapper">
                 <div class="pad heading push-b push-more">
                 <div class="float-r" style="margin-top: -5px;">
@@ -186,6 +186,10 @@
                 </div>
                 </div>
                 </div>
+
+
+
+                
                 <div class="row">
                 <div class="col-xs-12 push-b push-more">
                 <h5 class="push-t push-none">
@@ -194,14 +198,46 @@
                 <input id="cardsearch-draftpack-include" name="DraftPackInclude" data-toggle="toggle" data-on="Show Full Set Also" data-off="Inclusive" type="checkbox" data-size="mini" data-width="120">
                 </span>
                 </h5>
-                <select id="CardSet" name="CardSet" class="form-control" multiple style="width: 100%;">
-                <optgroup label="Set">
-                <option value="1">The War Of Elements [Set1]</option>
-                </optgroup>
-                <optgroup label="Mini-Sets/Campaigns">
-                <option value="">None</option>
-                </optgroup>
-                </select>
+                
+                
+                <select id="CardSet" name="CardSet" class="form-control" multiple="" style="width: 100%;">
+                    <optgroup label="Set">
+                    <option value="14">Behemoths of Thera [Set14]</option>
+                    <option value="13">Unleashed [Set13]</option>
+                    <option value="12">Cold Hunt [Set12]</option>
+                    <option value="11">Revelations [Set11]</option>
+                    <option value="10">Empire of Glass [Set10]</option>
+                    <option value="9">Argent Depths [Set9]</option>
+                    <option value="8">Echoes of Eternity [Set8]</option>
+                     <option value="7">The Flame of Xulta [Set7]</option>
+                    <option value="6">Dark Frontier [Set6]</option>
+                    <option value="5">Defiance [Set5]</option>
+                    <option value="4">The Fall of Argenport [Set4]</option>
+                    <option value="3">The Dusk Road [Set3]</option>
+                    <option value="2">Omens of the Past [Set2]</option>
+                    <option value="1">The Empty Throne [Set1]</option>
+                    </optgroup>
+                    <optgroup label="Mini-Sets/Campaigns">
+                    <option value="1145">The Devouring [Set1145]</option>
+                    <option value="1135">Enter the Arcanum [Set1135]</option>
+                    <option value="1125">Valley Beyond [Set1125]</option>
+                    <option value="1115">Hour of Glass [Set1115]</option>
+                    <option value="1107">Stormbreak [Set1107]</option>
+                    <option value="1105">Buried Memories [Set1105]</option>
+                    <option value="1097">Bastion Rising [Set1097]</option>
+                    <option value="1095">Awakening [Set1095]</option>
+                    <option value="1087">Shadow of the Spire [Set1087]</option>
+                    <option value="1085">Whispers of the Throne [Set1085]</option>
+                    <option value="1007">Promises by Firelight [Set1007]</option>
+                    <option value="1006">Trials of Grodov [Set1006]</option>
+                    <option value="1005">Homecoming [Set1005]</option>
+                    <option value="1004">Into Shadow [Set1004]</option>
+                    <option value="1003">Dead Reckoning [Set1003]</option>
+                    <option value="1002">The Tale of Horus Traver [Set1002]</option>
+                    <option value="1001">Jekk's Bounty [Set1001]</option>
+                    </optgroup>
+                    </select>
+               
                 </div>
                 </div>
                 </div>
@@ -228,9 +264,10 @@
                     <ul class="pagination pagination-sm push-b push-more push-only"><li><span class="pagination-info">1-20 of 200</span></li><li class="active"><a href="/cards/?p=1">1</a></li><li><a href="/cards/?p=2">2</a></li><li><a href="/cards/?p=3">3</a></li><li><a href="/cards/?p=4">4</a></li><li><a href="/cards/?p=5">5</a></li><li><a href="/cards/?p=6">6</a></li><li><a href="/cards/?p=7">7</a></li><li><a href="/cards/?p=2" title="Go to next page"><span class="fa fa-chevron-right"></span></a></li><li><a href="/cards/?p=130" title="Go to last page"><span class="fa fa-step-forward"></span></a></li></ul>
                         </div>
                         <div class="clearfix"></div>
+                        <div class="aaa"></div>
                         {% for card in cards %}
 
-        
+                        
 
                         <!-- <div class="card_image_col">
                             <div class="card_image"><a href="/card/{{ card.id }}"><img class="card_image" src={{ card.image }}></a></div>
@@ -252,5 +289,45 @@
 </div>
         
         
+{% endblock %}
+
+{% block script %}
+
+<script>
+$("#search-cards").on("change", function() {
+
+data = {factions: []};
+factions = ["fire", "time", "justice", "primal", "shadow"];
+
+for (let i = 0; i < factions.length ; i++) {
+
+    if ($(".filter-checkbox-"+factions[i]+" input").is(':checked')) {
+        
+        data["factions"].push(factions[i]);
+    
+    }
+
+}
+data["factions"] = data["factions"].join(",")
+
+console.log(data)
+
+
+
+$.ajax({
+    url: '/test/post',         /* Куда отправить запрос */
+    method: 'get',             /* Метод запроса (post или get) */
+    dataType: 'html',          /* Тип данных в ответе (xml, json, script, html). */
+    data: data,     /* Данные передаваемые в массиве */
+    success: function(data){ 
+        $(".aaa").html(data) /* В переменной data содержится ответ от index.php. */
+    }
+});
+// $("#search-cards").submit()
+
+
+})
+</script>
+
 {% endblock %}
     
