@@ -51,6 +51,8 @@ def test_post():
     for arg in (request.args):
         tmp = request.args.get(arg).split(",")
         res[arg] = tmp
+
+    return res
     return schema.apply_filters(res, card_base)
 
 app.run(port="5555", debug=True)
