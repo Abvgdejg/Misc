@@ -1,5 +1,6 @@
 from flask import Flask, render_template, send_from_directory, request
 import lib.card_base as cards
+import lib.schema as schema
 
 
 templates_dir = "./templates"
@@ -44,8 +45,12 @@ def test():
 
 @app.route('/test/post', methods=["GET", "POST"])
 def test_post():
-    arr = request.args.get("factions").split(",")
+    res = {}
+    # arr = request.args.get("factions").split(",")
     # for a in (request.args.get("factions")): arr.append(a)
-    return arr
+    for arg in (request.args):
+        tmp = request.args.get(arg).split(",")
+        res[arg] = tmp
+    return schema.apply_filters(res, card_base)
 
 app.run(port="5555", debug=True)

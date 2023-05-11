@@ -294,31 +294,49 @@
 {% block script %}
 
 <script>
-$("#search-cards").on("change", function() {
+filter_data = {}
+$("#search-cards").on("change", function(event) {
 
-data = {factions: []};
-factions = ["fire", "time", "justice", "primal", "shadow"];
 
-for (let i = 0; i < factions.length ; i++) {
+//data = {factions: []};
+// factions = ["fire", "time", "justice", "primal", "shadow"];
 
-    if ($(".filter-checkbox-"+factions[i]+" input").is(':checked')) {
+// for (let i = 0; i < factions.length ; i++) {
+
+//     if ($(".filter-checkbox-"+factions[i]+" input").is(':checked')) {
         
-        data["factions"].push(factions[i]);
+//         data["factions"].push(factions[i]);
     
-    }
+//     }
+
+// }
+// data["factions"] = data["factions"].join(",")
+target = event.target
+
+data_value = filter_data[target.getAttribute("name")]
+target_value = target.getAttribute("value")
+
+if (data_value == undefined) data_value = [] 
+
+if (data_value.includes(target_value)) data_value.splice(data_value.indexOf(target_value), 1)
+else data_value.push(target_value)
+
+if (data_value == "") delete filter_data[target.getAttribute("name")]
+else filter_data[target.getAttribute("name")] = data_value
+
+request_data = {}
+
+for (var key in filter_data) {
+
+    request_data[key] = filter_data[key].join(",")
 
 }
-data["factions"] = data["factions"].join(",")
-
-console.log(data)
-
-
 
 $.ajax({
     url: '/test/post',         /* Куда отправить запрос */
     method: 'get',             /* Метод запроса (post или get) */
     dataType: 'html',          /* Тип данных в ответе (xml, json, script, html). */
-    data: data,     /* Данные передаваемые в массиве */
+    data: request_data,     /* Данные передаваемые в массиве */
     success: function(data){ 
         $(".aaa").html(data) /* В переменной data содержится ответ от index.php. */
     }

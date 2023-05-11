@@ -1,0 +1,26 @@
+.filter-checkbox-image input[type=checkbox] {
+    display: none
+}
+
+.filter-checkbox-image {
+    display: inline-block
+}
+
+.filter-checkbox-image span,.cardsearch-filter label {
+    cursor: pointer
+}
+
+.filter-checkbox-image.no-pointer span,.cardsearch-filter.no-pointer label {
+    cursor: default
+}
+    
+.filter-checkbox-image span {
+    background: url("../images/site-icons1.png") no-repeat 0 0;
+    height: 24px;
+    width: 24px;
+    display: block;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 24px
+}
