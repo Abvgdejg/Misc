@@ -24,3 +24,18 @@
     text-align: center;
     line-height: 24px
 }
+label.filter-checkbox-general span {
+
+    background-position-x: -144px;
+
+}
+label.filter-checkbox-attack span {
+
+    background-position-x: -168px;
+
+}
+label.filter-checkbox-health span {
+
+    background-position-x: -192px;
+
+}
