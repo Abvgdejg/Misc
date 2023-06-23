@@ -5,7 +5,8 @@ import lib.schema as schema
 
 templates_dir = "./templates"
 
-card_base = cards.copy_base()
+#cards.copy_base()
+card_base = cards.load_base()
 
 app = Flask(__name__, template_folder=templates_dir)
 
@@ -46,13 +47,13 @@ def test():
 @app.route('/test/post', methods=["GET", "POST"])
 def test_post():
     res = {}
-    # arr = request.args.get("factions").split(",")
-    # for a in (request.args.get("factions")): arr.append(a)
-    for arg in (request.args):
-        tmp = request.args.get(arg).split(",")
-        res[arg] = tmp
+    arr = request.args.get("factions").split(",")
+    for a in (request.args.get("factions")): arr.append(a)
+    # for arg in (request.args):
+    #     tmp = request.args.get(arg).split(",")
+    #     res[arg] = tmp
 
-    return res
+    # return res
     return schema.apply_filters(res, card_base)
 
 app.run(port="5555", debug=True)

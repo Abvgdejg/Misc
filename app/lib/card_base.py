@@ -2,6 +2,7 @@ import requests
 import sys
 import os
 import json
+import yaml
 from lib.classes import Card, Deck
 
 count = 30
@@ -108,11 +109,24 @@ def copy_base():
         cards[id] = stats
         results.append(card)
 
+        yaml.dump(cards, open("cards.yaml", "w+"), allow_unicode=True)
     
 
         # log(f'Complite: {len(results)}/{count} {f"Errors: {error_count}" if error_count != 0 else ""}')
 
     return results
+        
+def load_base():
+    loaded_base = yaml.load(open("cards.yaml", "r"))
+    base = []
+    
+    for card in loaded_base.values():
+        card = Card(card["id"], card["name"], card["description"], 
+                    card["set"], card["number"], card["fraction"], 
+                    card["rarity"], card["cost"], card["health"], 
+                    card["stamina"], card["damage"], card["image"])
+        base.append(card)
+    return base
 
 # log(f'\nCreate json file')
 # open("cards.json", "w").write(json.dumps(cards, ensure_ascii=False, indent=4))
