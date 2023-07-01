@@ -117,7 +117,7 @@ def copy_base():
     return results
         
 def load_base():
-    loaded_base = yaml.load(open("cards.yaml", "r"))
+    loaded_base = yaml.safe_load(open("cards.yaml", "r"))
     base = []
     
     for card in loaded_base.values():

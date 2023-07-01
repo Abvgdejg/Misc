@@ -47,13 +47,13 @@ def test():
 @app.route('/test/post', methods=["GET", "POST"])
 def test_post():
     res = {}
-    arr = request.args.get("factions").split(",")
-    for a in (request.args.get("factions")): arr.append(a)
-    # for arg in (request.args):
-    #     tmp = request.args.get(arg).split(",")
-    #     res[arg] = tmp
+    # arr = request.args.get("factions").split(",")
+    # for a in (request.args.get("factions")): arr.append(a)
+    for arg in (request.args):
+        tmp = request.args.get(arg).split(",")
+        res[arg] = tmp
 
     # return res
     return schema.apply_filters(res, card_base)
 
-app.run(port="5555", debug=True)
+app.run(port="5000", host="0.0.0.0", debug=True)
