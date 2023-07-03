@@ -26,19 +26,19 @@ def card_page(card_id):
 
 @app.route('/images/<path:path>')
 def send_image(path):
-    return send_from_directory('static/images', path)
+    return send_from_directory('./static/images', path)
 
 @app.route('/css/<path:path>')
 def send_css(path):
-    return send_from_directory('static/css', path)
+    return send_from_directory('./static/css', path)
 
 @app.route('/js/<path:path>')
 def send_js(path):
-    return send_from_directory('static/js', path)
+    return send_from_directory('./static/js', path)
 
 @app.route('/fonts/<path:path>')
 def send_font(path):
-    return send_from_directory('static/fonts', path)
+    return send_from_directory('./static/fonts', path)
 
 @app.route('/test')
 def test():

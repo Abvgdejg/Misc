@@ -5,7 +5,7 @@ import json
 import yaml
 from lib.classes import Card, Deck
 
-count = 30
+count = 201
 
 ids = [98264 + el for el in range(count)] #201
 
@@ -15,7 +15,7 @@ cards = {}
 
 error_count = 0
 
-static_dir = "./app/static"
+static_dir = "./static"
 images_dir = "/images/"
 os.makedirs(static_dir+images_dir, exist_ok=True)
 
@@ -109,7 +109,8 @@ def copy_base():
         cards[id] = stats
         results.append(card)
 
-        yaml.dump(cards, open("cards.yaml", "w+"), allow_unicode=True)
+    with open('cards.yaml', 'w+') as file:
+        yaml.dump(cards, file, allow_unicode=True)
     
 
         # log(f'Complite: {len(results)}/{count} {f"Errors: {error_count}" if error_count != 0 else ""}')
@@ -117,7 +118,8 @@ def copy_base():
     return results
         
 def load_base():
-    loaded_base = yaml.safe_load(open("cards.yaml", "r"))
+    with open('cards.yaml', 'r') as file:
+        loaded_base = yaml.safe_load(file)
     base = []
     
     for card in loaded_base.values():

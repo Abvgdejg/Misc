@@ -36,13 +36,18 @@ def create_cards_html(data):
     tmp = ""
 
     for part in data:
-        tmp += f"""
-        <div class="card-search-item col-lg-3 col-sm-4 col-xs-6 add-card-main element-relative">
-            <div class="card-search-cardview-image">
-                <a href="/card/{ part.id }"><img class="b-lazy lazyload img-responsive" src={ part.image } alt="" height="660" width="416"></a>
-            </div>
-        </div>
+        # tmp += f"""
+        # <div class="card-search-item col-lg-3 col-sm-4 col-xs-6 add-card-main element-relative">
+        #     <div class="card-search-cardview-image">
+        #         <a href="/card/{ part.id }"><img class="b-lazy lazyload img-responsive" src={ part.image } alt="" height="660" width="416"></a>
+        #     </div>
+        # </div>
         
+        # """
+        tmp += f"""
+            <div class="card_image_col">
+                <div class="card_image"><a href="/card/{ part.id }"><img class="card_image" src={ part.image }></a></div>
+            </div>
         """
 
     return tmp

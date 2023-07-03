@@ -1,5 +1,7 @@
 98264:
-  cost: {count: '3', quality: Серебро}
+  cost:
+    count: '3'
+    quality: Серебро
   damage: 1-2-3
   description: Неисчислимы их армии, что вечно кочуют с места на место, превращая
     в ничто деревни и города пограничья.
@@ -13,7 +15,9 @@
   set: Война стихий
   stamina: 2
 98266:
-  cost: {count: '3', quality: Серебро}
+  cost:
+    count: '3'
+    quality: Серебро
   damage: 1-2-2
   description: null
   fraction: Степи
@@ -26,7 +30,9 @@
   set: Война стихий
   stamina: 2
 98267:
-  cost: {count: '4', quality: Серебро}
+  cost:
+    count: '4'
+    quality: Серебро
   damage: 1-1-2
   description: null
   fraction: Степи
@@ -39,7 +45,9 @@
   set: Война стихий
   stamina: 1
 98268:
-  cost: {count: '4', quality: Серебро}
+  cost:
+    count: '4'
+    quality: Серебро
   damage: 1-2-2
   description: null
   fraction: Степи
@@ -52,7 +60,9 @@
   set: Война стихий
   stamina: 1
 98269:
-  cost: {count: '4', quality: Серебро}
+  cost:
+    count: '4'
+    quality: Серебро
   damage: 1-1-2
   description: Пёстрые одежды достались им от беспечных кандийских караванщиков.
   fraction: Степи
@@ -65,7 +75,9 @@
   set: Война стихий
   stamina: 1
 98270:
-  cost: {count: '4', quality: Серебро}
+  cost:
+    count: '4'
+    quality: Серебро
   damage: 1-1-2
   description: null
   fraction: Степи
@@ -78,7 +90,9 @@
   set: Война стихий
   stamina: 1
 98271:
-  cost: {count: '4', quality: Серебро}
+  cost:
+    count: '4'
+    quality: Серебро
   damage: 2-2-3
   description: null
   fraction: Степи
@@ -91,7 +105,9 @@
   set: Война стихий
   stamina: 2
 98272:
-  cost: {count: '4', quality: Серебро}
+  cost:
+    count: '4'
+    quality: Серебро
   damage: 2-2-3
   description: Волколаки Великих степей... Вечно голодные, истекающие слюной злобные
     твари, охотящиеся стаями.
@@ -105,7 +121,9 @@
   set: Война стихий
   stamina: 2
 98273:
-  cost: {count: '4', quality: Серебро}
+  cost:
+    count: '4'
+    quality: Серебро
   damage: 1-1-2
   description: Гонимый раскалённым ветром, песок пустыни Дзара хлещет подобно львиным
     когтям.
@@ -119,7 +137,9 @@
   set: Война стихий
   stamina: 1
 98274:
-  cost: {count: '5', quality: Серебро}
+  cost:
+    count: '5'
+    quality: Серебро
   damage: 1-1-2
   description: Не один аколит Дзара превратился в живой факел, ища власти над огненной
     стихией.
@@ -133,7 +153,9 @@
   set: Война стихий
   stamina: 1
 98275:
-  cost: {count: '5', quality: '5'}
+  cost:
+    count: '5'
+    quality: '5'
   damage: 2-4-5
   description: В пустыне Сота издревле существовал культ служителей Змея. Тот, кто
     постигал высшие заповеди учения, начинал обретать черты своего божества.
@@ -147,7 +169,9 @@
   set: Война стихий
   stamina: 1
 98276:
-  cost: {count: '5', quality: '5'}
+  cost:
+    count: '5'
+    quality: '5'
   damage: 2-3
   description: null
   fraction: Степи
@@ -160,7 +184,9 @@
   set: Война стихий
   stamina: 1
 98277:
-  cost: {count: '5', quality: '5'}
+  cost:
+    count: '5'
+    quality: '5'
   damage: 3-3-4
   description: Орки Великих степей... Их орды из года в год штурмуют неприступные
     скалы Лант-Мора.
@@ -174,7 +200,9 @@
   set: Война стихий
   stamina: 1
 98278:
-  cost: {count: '5', quality: Серебро}
+  cost:
+    count: '5'
+    quality: Серебро
   damage: 2-3-3
   description: null
   fraction: Степи
@@ -187,7 +215,9 @@
   set: Война стихий
   stamina: null
 98279:
-  cost: {count: '5', quality: Серебро}
+  cost:
+    count: '5'
+    quality: Серебро
   damage: 2-3-4
   description: null
   fraction: Степи
@@ -200,7 +230,9 @@
   set: Война стихий
   stamina: 1
 98280:
-  cost: {count: '5', quality: Серебро}
+  cost:
+    count: '5'
+    quality: Серебро
   damage: 1-2-3
   description: Прикрыться щитом способен любой, однако в руках настоящего мастера
     щит превращается в непробиваемую стену.
@@ -214,7 +246,9 @@
   set: Война стихий
   stamina: 1
 98281:
-  cost: {count: '6', quality: '6'}
+  cost:
+    count: '6'
+    quality: '6'
   damage: 1-2-3
   description: null
   fraction: Степи
@@ -227,7 +261,9 @@
   set: Война стихий
   stamina: 1
 98282:
-  cost: {count: '6', quality: Серебро}
+  cost:
+    count: '6'
+    quality: Серебро
   damage: 2-3-4
   description: Ездовой ящер, быть может, и не так быстр, как лошадь, зато куда более
     опасен.
@@ -241,7 +277,9 @@
   set: Война стихий
   stamina: 2
 98283:
-  cost: {count: '7', quality: Серебро}
+  cost:
+    count: '7'
+    quality: Серебро
   damage: 1-2-3
   description: null
   fraction: Степи
@@ -254,7 +292,9 @@
   set: Война стихий
   stamina: 1
 98284:
-  cost: {count: '4', quality: Золото}
+  cost:
+    count: '4'
+    quality: Золото
   damage: 1-1-2
   description: null
   fraction: Степи
@@ -267,7 +307,9 @@
   set: Война стихий
   stamina: 1
 98285:
-  cost: {count: '4', quality: Золото}
+  cost:
+    count: '4'
+    quality: Золото
   damage: 2-2-3
   description: Говорят, клык мантикоры помогает в любовных делах. Жаль, никто не сумел
     проверить.
@@ -281,7 +323,9 @@
   set: Война стихий
   stamina: null
 98286:
-  cost: {count: '4', quality: Золото}
+  cost:
+    count: '4'
+    quality: Золото
   damage: 2-2-3
   description: null
   fraction: Степи
@@ -294,7 +338,9 @@
   set: Война стихий
   stamina: 1
 98287:
-  cost: {count: '4', quality: Золото}
+  cost:
+    count: '4'
+    quality: Золото
   damage: 2-3-4
   description: null
   fraction: Степи
@@ -307,7 +353,9 @@
   set: Война стихий
   stamina: 2
 98288:
-  cost: {count: '5', quality: Золото}
+  cost:
+    count: '5'
+    quality: Золото
   damage: 1-1-2
   description: Покрытый ожогами старец разогнался и бросил&nbsp;
   fraction: Степи
@@ -320,7 +368,9 @@
   set: Война стихий
   stamina: 2
 98289:
-  cost: {count: '5', quality: Золото}
+  cost:
+    count: '5'
+    quality: Золото
   damage: 1-1-2
   description: null
   fraction: Степи
@@ -333,7 +383,9 @@
   set: Война стихий
   stamina: 1
 98290:
-  cost: {count: '6', quality: Золото}
+  cost:
+    count: '6'
+    quality: Золото
   damage: 2-3-5
   description: null
   fraction: Степи
@@ -346,7 +398,9 @@
   set: Война стихий
   stamina: 2
 98291:
-  cost: {count: '6', quality: Золото}
+  cost:
+    count: '6'
+    quality: Золото
   damage: 2-3-4
   description: null
   fraction: Степи
@@ -359,7 +413,9 @@
   set: Война стихий
   stamina: 2
 98292:
-  cost: {count: '6', quality: Золото}
+  cost:
+    count: '6'
+    quality: Золото
   damage: 1-1-2
   description: null
   fraction: Степи
@@ -372,7 +428,9 @@
   set: Война стихий
   stamina: 1
 98293:
-  cost: {count: '6', quality: Золото}
+  cost:
+    count: '6'
+    quality: Золото
   damage: 2-2-3
   description: Доспехи пехотинцев Туллена закаляют в специальных отварах, чтобы воин
     не спёкся в них на солнце.
@@ -383,5 +441,2623 @@
   name: Пеший латник
   number: '29'
   rarity: Частая
+  set: Война стихий
+  stamina: 1
+98294:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 2-2-3
+  description: Упрямство бронтобеев широко известно. Большинство старается просто
+    не попадаться им на глаза.
+  fraction: Степи
+  health: '13'
+  id: 98294
+  image: /images/cards/card__война_стихий_30.png
+  name: Бронтобей
+  number: '30'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98295:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 1-1-1
+  description: Гулкие удары шаманского бубна разносились по степи, вселяя в сердца
+    воинов отвагу.
+  fraction: Степи
+  health: '7'
+  id: 98295
+  image: /images/cards/card__война_стихий_31.png
+  name: Ойуун
+  number: '31'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98296:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 2-3-5
+  description: null
+  fraction: Степи
+  health: '13'
+  id: 98296
+  image: /images/cards/card__война_стихий_32.png
+  name: Дегаска
+  number: '32'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 2
+98297:
+  cost:
+    count: '8'
+    quality: Золото
+  damage: 3-4-5
+  description: Скелос — великий воин эпохи Битв Стихий, ныне ставший лишь одним из
+    многих.
+  fraction: Степи
+  health: '13'
+  id: 98297
+  image: /images/cards/card__война_стихий_33.png
+  name: Скелос
+  number: '33'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98298:
+  cost:
+    count: '9'
+    quality: Золото
+  damage: 3-4-5
+  description: Редко когда гладиатор-человек может остаться в живых, выйдя на арену
+    против минотавра.
+  fraction: Степи
+  health: '14'
+  id: 98298
+  image: /images/cards/card__война_стихий_34.png
+  name: Минотавр
+  number: '34'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98299:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Горы
+  health: '7'
+  id: 98299
+  image: /images/cards/card__война_стихий_35.png
+  name: Гном-поджигатель
+  number: '35'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98300:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Горы
+  health: '6'
+  id: 98300
+  image: /images/cards/card__война_стихий_36.png
+  name: Ледяной змей
+  number: '36'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98301:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Горы
+  health: '6'
+  id: 98301
+  image: /images/cards/card__война_стихий_37.png
+  name: Овражный гном
+  number: '37'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98302:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Горы
+  health: '7'
+  id: 98302
+  image: /images/cards/card__война_стихий_38.png
+  name: Бешеный маг
+  number: '38'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98303:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: Многие битвы в Халланских горах не имели ни победителей, ни побеждённых.
+    Голодные гули съедали их всех...
+  fraction: Горы
+  health: '8'
+  id: 98303
+  image: /images/cards/card__война_стихий_39.png
+  name: Гуль
+  number: '39'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98304:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-2
+  description: Огромная сосулька вылетела из бушующей метели и свалила всадника вместе
+    с лошадью.
+  fraction: Горы
+  health: '7'
+  id: 98304
+  image: /images/cards/card__война_стихий_40.png
+  name: Мразень
+  number: '40'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98305:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Горы
+  health: '8'
+  id: 98305
+  image: /images/cards/card__война_стихий_41.png
+  name: Айрин
+  number: '41'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98306:
+  cost:
+    count: '5'
+    quality: '5'
+  damage: 1-2-3
+  description: Вальхалла
+  fraction: Горы
+  health: '8'
+  id: 98306
+  image: /images/cards/card__война_стихий_42.png
+  name: Знахарь племени
+  number: '42'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98307:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 3-4-5
+  description: Плоти гор не страшны даже острейшие гномьи клинки.
+  fraction: Горы
+  health: '8'
+  id: 98307
+  image: /images/cards/card__война_стихий_43.png
+  name: Каменный голем
+  number: '43'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98308:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-3
+  description: Эффективность длинных копий в узких подгорных туннелях нельзя переоценивать...
+  fraction: Горы
+  health: '8'
+  id: 98308
+  image: /images/cards/card__война_стихий_44.png
+  name: Страж чертогов
+  number: '44'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98309:
+  cost:
+    count: '5'
+    quality: '5'
+  damage: '1'
+  description: Вальхалла
+  fraction: Горы
+  health: '7'
+  id: 98309
+  image: /images/cards/card__война_стихий_45.png
+  name: Ледовый охотник
+  number: '45'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98310:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-3
+  description: null
+  fraction: Горы
+  health: '10'
+  id: 98310
+  image: /images/cards/card__война_стихий_46.png
+  name: Мастер топора
+  number: '46'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98311:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Горы
+  health: '9'
+  id: 98311
+  image: /images/cards/card__война_стихий_47.png
+  name: Ртунх
+  number: '47'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98312:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-2
+  description: Самоцветы, вправленные в их броню,&nbsp;
+  fraction: Горы
+  health: '10'
+  id: 98312
+  image: /images/cards/card__война_стихий_48.png
+  name: Смотритель горнила
+  number: '48'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98313:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Горы
+  health: '10'
+  id: 98313
+  image: /images/cards/card__война_стихий_49.png
+  name: Центурион
+  number: '49'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 2
+98314:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: Дальние родственники троллей, хранители гор&nbsp;
+  fraction: Горы
+  health: '13'
+  id: 98314
+  image: /images/cards/card__война_стихий_50.png
+  name: Хранитель гор
+  number: '50'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98315:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Горы
+  health: '7'
+  id: 98315
+  image: /images/cards/card__война_стихий_51.png
+  name: Призывающая бурю
+  number: '51'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98316:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-2-3
+  description: null
+  fraction: Горы
+  health: '10'
+  id: 98316
+  image: /images/cards/card__война_стихий_52.png
+  name: Тан Ханеранга
+  number: '52'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98317:
+  cost:
+    count: '7'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Горы
+  health: '12'
+  id: 98317
+  image: /images/cards/card__война_стихий_53.png
+  name: Гном-басаарг
+  number: '53'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98318:
+  cost:
+    count: '3'
+    quality: Золото
+  damage: 1-1-2
+  description: null
+  fraction: Горы
+  health: '5'
+  id: 98318
+  image: /images/cards/card__война_стихий_54.png
+  name: Искатель тайн
+  number: '54'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98319:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: 2-3-4
+  description: Бычья сила и неприхотливость делают боргов с берегов Норна отличными
+    наёмниками.
+  fraction: Горы
+  health: '10'
+  id: 98319
+  image: /images/cards/card__война_стихий_55.png
+  name: Борг
+  number: '55'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98320:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: 2-3-4
+  description: Номы упрямы и мстительны и даже в предсмертной агонии успевают нанести
+    последний удар.
+  fraction: Горы
+  health: '7'
+  id: 98320
+  image: /images/cards/card__война_стихий_56.png
+  name: Ном
+  number: '56'
+  rarity: Редкая
+  set: Война стихий
+  stamina: null
+98321:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 1-1-2
+  description: null
+  fraction: Горы
+  health: '8'
+  id: 98321
+  image: /images/cards/card__война_стихий_57.png
+  name: Криомант
+  number: '57'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98322:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-3-3
+  description: null
+  fraction: Горы
+  health: '12'
+  id: 98322
+  image: /images/cards/card__война_стихий_58.png
+  name: Молотобоец
+  number: '58'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98323:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-3-4
+  description: Вальхалла
+  fraction: Горы
+  health: '10'
+  id: 98323
+  image: /images/cards/card__война_стихий_59.png
+  name: Оборотень
+  number: '59'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98324:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-3
+  description: null
+  fraction: Горы
+  health: '12'
+  id: 98324
+  image: /images/cards/card__война_стихий_60.png
+  name: Аргвальд
+  number: '60'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98325:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-5
+  description: Великий Хельмир, горную гряду пересекая, со всякой нечистью проворно
+    расправлялся. Однако ж, повстречав на пике великана, укрыться поспешил в расщелине
+    глубокой, великой силы справедливо опасаясь.
+  fraction: Горы
+  health: '17'
+  id: 98325
+  image: /images/cards/card__война_стихий_61.png
+  name: Горный великан
+  number: '61'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98326:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 3-5-6
+  description: Вальхалла
+  fraction: Горы
+  health: '12'
+  id: 98326
+  image: /images/cards/card__война_стихий_62.png
+  name: Костедробитель
+  number: '62'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98327:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-5
+  description: Вальхалла
+  fraction: Горы
+  health: '10'
+  id: 98327
+  image: /images/cards/card__война_стихий_63.png
+  name: Рагнар
+  number: '63'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98328:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 4-4-5
+  description: «Назад! Его невозможно убить! Навалитесь со всех сторон, рубите все
+    разом — в этом наш шанс...» (из Великой книги гномьего Исхода).
+  fraction: Горы
+  health: '10'
+  id: 98328
+  image: /images/cards/card__война_стихий_64.png
+  name: Гобрах
+  number: '64'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 2
+98329:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 1-1-2
+  description: «Там, на перевалах скал Лант-Мора, вас ждет поистине холодный приём».
+  fraction: Горы
+  health: '7'
+  id: 98329
+  image: /images/cards/card__война_стихий_65.png
+  name: Ледовый страж
+  number: '65'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98330:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 2-2-3
+  description: null
+  fraction: Горы
+  health: '9'
+  id: 98330
+  image: /images/cards/card__война_стихий_66.png
+  name: Повелитель молний
+  number: '66'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98331:
+  cost:
+    count: '8'
+    quality: Золото
+  damage: 3-4-6
+  description: null
+  fraction: Горы
+  health: '12'
+  id: 98331
+  image: /images/cards/card__война_стихий_67.png
+  name: Гномий король
+  number: '67'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98332:
+  cost:
+    count: '9'
+    quality: Золото
+  damage: 2-3-4
+  description: null
+  fraction: Горы
+  health: '14'
+  id: 98332
+  image: /images/cards/card__война_стихий_68.png
+  name: Владыка небес
+  number: '68'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98333:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-2
+  description: Серебристые шкурки атекаров ценятся среди модников Холверта, но любой
+    знающий егерь скажет, что добыть такую — задачка не из лёгких.
+  fraction: Леса
+  health: '6'
+  id: 98333
+  image: /images/cards/card__война_стихий_69.png
+  name: Атекар
+  number: '69'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98334:
+  cost:
+    count: '3'
+    quality: '3'
+  damage: 1-1-2
+  description: Величайшие колдуны хмурят брови и крепче сжимают свои посохи при одном
+    лишь упоминании о драксах, чьей излюбленной пищей является магия.
+  fraction: Леса
+  health: '5'
+  id: 98334
+  image: /images/cards/card__война_стихий_70.png
+  name: Дракс
+  number: '70'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98335:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-3
+  description: Схватка с лешим один на один была похожа на фарс. Получив хотя бы царапину,
+    эта тварь, хихикая, залезала на дерево и через пару минут была уже полностью здоровой.
+  fraction: Леса
+  health: '7'
+  id: 98335
+  image: /images/cards/card__война_стихий_71.png
+  name: Леший
+  number: '71'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98336:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-1-1
+  description: Некоторые высшие друиды умеют выманивать фей из их тайных убежищ в
+    лесной глуши.
+  fraction: Леса
+  health: '5'
+  id: 98336
+  image: /images/cards/card__война_стихий_72.png
+  name: Фея леса
+  number: '72'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98337:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-2
+  description: Будь то человек, эльф, зверь, гриб или растение — друиды знают, как
+    исцелить любого из обитателей Кронга.
+  fraction: Леса
+  health: '7'
+  id: 98337
+  image: /images/cards/card__война_стихий_73.png
+  name: Друид
+  number: '73'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98338:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-2
+  description: Эти маленькие пожиратели падали вечно кружат над полем боя, надеясь
+    на поживу.
+  fraction: Леса
+  health: '6'
+  id: 98338
+  image: /images/cards/card__война_стихий_74.png
+  name: Корпит
+  number: '74'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98339:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Леса
+  health: '8'
+  id: 98339
+  image: /images/cards/card__война_стихий_75.png
+  name: Лесной разбойник
+  number: '75'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98340:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Леса
+  health: '8'
+  id: 98340
+  image: /images/cards/card__война_стихий_76.png
+  name: Оури
+  number: '76'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98341:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Леса
+  health: '7'
+  id: 98341
+  image: /images/cards/card__война_стихий_77.png
+  name: Паук-пересмешник
+  number: '77'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98342:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Леса
+  health: '8'
+  id: 98342
+  image: /images/cards/card__война_стихий_78.png
+  name: Эриала
+  number: '78'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98343:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Леса
+  health: '9'
+  id: 98343
+  image: /images/cards/card__война_стихий_79.png
+  name: Бегущая по кронам
+  number: '79'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 2
+98344:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: Бьёрны — мрачное племя холодных лесов севера Лаара. Эти суровые воины
+    славятся и отвагой, и умением врачевать.
+  fraction: Леса
+  health: '10'
+  id: 98344
+  image: /images/cards/card__война_стихий_80.png
+  name: Бьёрн
+  number: '80'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98345:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Леса
+  health: '12'
+  id: 98345
+  image: /images/cards/card__война_стихий_81.png
+  name: Вожак сатиров
+  number: '81'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98346:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-2-4
+  description: null
+  fraction: Леса
+  health: '11'
+  id: 98346
+  image: /images/cards/card__война_стихий_82.png
+  name: Клаэр
+  number: '82'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98347:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: null
+  fraction: Леса
+  health: '9'
+  id: 98347
+  image: /images/cards/card__война_стихий_83.png
+  name: Серк
+  number: '83'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98348:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Леса
+  health: '12'
+  id: 98348
+  image: /images/cards/card__война_стихий_84.png
+  name: Камнедрев
+  number: '84'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98349:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-2-3
+  description: Вооружаясь неподъёмными дубинами, вырезанными из железного дерева,
+    лёккены уверенно отбивали атаки болотных племён.
+  fraction: Леса
+  health: '10'
+  id: 98349
+  image: /images/cards/card__война_стихий_85.png
+  name: Лёккен
+  number: '85'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98350:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Леса
+  health: '9'
+  id: 98350
+  image: /images/cards/card__война_стихий_86.png
+  name: Мира
+  number: '86'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98351:
+  cost:
+    count: '7'
+    quality: Серебро
+  damage: 3-3-5
+  description: Могучая магия топора Норна способна собрать мощь всех защитников леса
+    воедино.
+  fraction: Леса
+  health: '12'
+  id: 98351
+  image: /images/cards/card__война_стихий_87.png
+  name: Фагор
+  number: '87'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98352:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: 1-2-2
+  description: null
+  fraction: Леса
+  health: '10'
+  id: 98352
+  image: /images/cards/card__война_стихий_88.png
+  name: Резчик идолов
+  number: '88'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98353:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 4-4-5
+  description: null
+  fraction: Леса
+  health: '6'
+  id: 98353
+  image: /images/cards/card__война_стихий_89.png
+  name: Грызь
+  number: '89'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98354:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 1-2-3
+  description: null
+  fraction: Леса
+  health: '7'
+  id: 98354
+  image: /images/cards/card__война_стихий_90.png
+  name: Дверг
+  number: '90'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98355:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-2-4
+  description: null
+  fraction: Леса
+  health: '10'
+  id: 98355
+  image: /images/cards/card__война_стихий_91.png
+  name: Дикий целитель
+  number: '91'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 2
+98356:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-3-4
+  description: null
+  fraction: Леса
+  health: '11'
+  id: 98356
+  image: /images/cards/card__война_стихий_92.png
+  name: Кобольд
+  number: '92'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98357:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-2-3
+  description: null
+  fraction: Леса
+  health: '8'
+  id: 98357
+  image: /images/cards/card__война_стихий_93.png
+  name: Очи Кронга
+  number: '93'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: null
+98358:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 1-2-3
+  description: null
+  fraction: Леса
+  health: '10'
+  id: 98358
+  image: /images/cards/card__война_стихий_94.png
+  name: Король-жрец
+  number: '94'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98359:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 1-2-3
+  description: null
+  fraction: Леса
+  health: '8'
+  id: 98359
+  image: /images/cards/card__война_стихий_95.png
+  name: Ловец душ
+  number: '95'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98360:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 1-1-2
+  description: null
+  fraction: Леса
+  health: '8'
+  id: 98360
+  image: /images/cards/card__война_стихий_96.png
+  name: Тергала
+  number: '96'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98361:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-4
+  description: Переняв чуждое им искусство ближнего боя, эльфы достигли в нём вершин
+    мастерства.
+  fraction: Леса
+  health: '10'
+  id: 98361
+  image: /images/cards/card__война_стихий_97.png
+  name: Эльфийский воин
+  number: '97'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98362:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 3-4-5
+  description: Что значат жалкая магия и ухищрения созданий Новой эры для того, кто
+    помнит само рождение этого мира?
+  fraction: Леса
+  health: '14'
+  id: 98362
+  image: /images/cards/card__война_стихий_98.png
+  name: Ётун
+  number: '98'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98363:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 2-3-4
+  description: Наконечники стрел серых альвов из редкого огнистого железа прожигают
+    навылет любой доспех.
+  fraction: Леса
+  health: '9'
+  id: 98363
+  image: /images/cards/card__война_стихий_99.png
+  name: Серый альв
+  number: '99'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98364:
+  cost:
+    count: '8'
+    quality: Золото
+  damage: 3-4-5
+  description: В незапамятные времена некоторые племена гоблинов были вынуждены покинуть
+    родные болота и поселиться в негостеприимных лесах Кронга.
+  fraction: Леса
+  health: '18'
+  id: 98364
+  image: /images/cards/card__война_стихий_100.png
+  name: Хобгоблин
+  number: '100'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98365:
+  cost:
+    count: '8'
+    quality: Золото
+  damage: 4-5-6
+  description: null
+  fraction: Леса
+  health: '14'
+  id: 98365
+  image: /images/cards/card__война_стихий_101.png
+  name: Циклоп
+  number: '101'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98366:
+  cost:
+    count: '9'
+    quality: Золото
+  damage: 3-4-5
+  description: null
+  fraction: Леса
+  health: '16'
+  id: 98366
+  image: /images/cards/card__война_стихий_102.png
+  name: Келе
+  number: '102'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98367:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Болота
+  health: '6'
+  id: 98367
+  image: /images/cards/card__война_стихий_103.png
+  name: Ижор
+  number: '103'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98368:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Болота
+  health: '6'
+  id: 98368
+  image: /images/cards/card__война_стихий_104.png
+  name: Махинатор
+  number: '104'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98369:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Болота
+  health: '5'
+  id: 98369
+  image: /images/cards/card__война_стихий_105.png
+  name: Отряд карателей
+  number: '105'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98370:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-3
+  description: 'Слуга Архааля неторопливо заложил вираж и свернул на восток: он знал,
+    что одинокая цель станет лёгкой добычей.'
+  fraction: Болота
+  health: '6'
+  id: 98370
+  image: /images/cards/card__война_стихий_106.png
+  name: Римаанды
+  number: '106'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98371:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-1-1
+  description: null
+  fraction: Болота
+  health: '5'
+  id: 98371
+  image: /images/cards/card__война_стихий_107.png
+  name: Болотник
+  number: '107'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98372:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Болота
+  health: '9'
+  id: 98372
+  image: /images/cards/card__война_стихий_108.png
+  name: Дети топи
+  number: '108'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98373:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Болота
+  health: '8'
+  id: 98373
+  image: /images/cards/card__война_стихий_109.png
+  name: Осклизг
+  number: '109'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98374:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-1-1
+  description: null
+  fraction: Болота
+  health: '7'
+  id: 98374
+  image: /images/cards/card__война_стихий_110.png
+  name: Рэккен
+  number: '110'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98375:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Болота
+  health: '7'
+  id: 98375
+  image: /images/cards/card__война_стихий_111.png
+  name: Тови
+  number: '111'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98376:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 2-2-3
+  description: Будучи знатоками самых смертоносных ядов, хедды предпочитают закаливать
+    свои клинки в отравленных водах источников Исхара.
+  fraction: Болота
+  health: '8'
+  id: 98376
+  image: /images/cards/card__война_стихий_112.png
+  name: Хедд
+  number: '112'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98377:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-4
+  description: Четырёхрукие гарриды из топей Ракштольна были бы самыми могучими стрелками,
+    если бы не примитивные луки, сделанные из морёных коряг.
+  fraction: Болота
+  health: '9'
+  id: 98377
+  image: /images/cards/card__война_стихий_113.png
+  name: Гаррид-лучник
+  number: '113'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98378:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Болота
+  health: '8'
+  id: 98378
+  image: /images/cards/card__война_стихий_114.png
+  name: Грёзы Архааля
+  number: '114'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98379:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: Встретив попавшую в беду незнакомку, не спеши сломя голову бросаться
+    ей на помощь, ведь спасать, возможно, придётся тебя самого.
+  fraction: Болота
+  health: '11'
+  id: 98379
+  image: /images/cards/card__война_стихий_115.png
+  name: Кровяница
+  number: '115'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 2
+98380:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Болота
+  health: '12'
+  id: 98380
+  image: /images/cards/card__война_стихий_116.png
+  name: Василиск
+  number: '116'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98381:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 1-1-4
+  description: Никто не знает пути через трясины Уорлога&nbsp;
+  fraction: Болота
+  health: '14'
+  id: 98381
+  image: /images/cards/card__война_стихий_117.png
+  name: Вайл
+  number: '117'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98382:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Болота
+  health: '7'
+  id: 98382
+  image: /images/cards/card__война_стихий_118.png
+  name: Шаман-душегрыз
+  number: '118'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98383:
+  cost:
+    count: '7'
+    quality: Серебро
+  damage: 2-3-3
+  description: null
+  fraction: Болота
+  health: '10'
+  id: 98383
+  image: /images/cards/card__война_стихий_119.png
+  name: Бул’Багур
+  number: '119'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98384:
+  cost:
+    count: '7'
+    quality: Серебро
+  damage: '2'
+  description: Гоблин нанёс коварный выпад и ощерился зубастой усмешкой — его противник
+    был обречён.
+  fraction: Болота
+  health: '10'
+  id: 98384
+  image: /images/cards/card__война_стихий_120.png
+  name: Гоблин
+  number: '120'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98385:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: '3'
+  description: null
+  fraction: Болота
+  health: '10'
+  id: 98385
+  image: /images/cards/card__война_стихий_121.png
+  name: Слизь
+  number: '121'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98386:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: 1-2-3
+  description: Её бледная, мягко светящаяся кожа цветом походит на перламутр, что
+    она собирает.
+  fraction: Болота
+  health: '9'
+  id: 98386
+  image: /images/cards/card__война_стихий_122.png
+  name: Дочь перламутра
+  number: '122'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98387:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: 1-2-2
+  description: null
+  fraction: Болота
+  health: '7'
+  id: 98387
+  image: /images/cards/card__война_стихий_123.png
+  name: Ноками
+  number: '123'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98388:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: 1-2-2
+  description: null
+  fraction: Болота
+  health: '7'
+  id: 98388
+  image: /images/cards/card__война_стихий_124.png
+  name: Сеятель хвори
+  number: '124'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98389:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: 1-2-3
+  description: Беда тому путнику, который решит пробираться в одиночку через камышовые
+    поля Уора.
+  fraction: Болота
+  health: '8'
+  id: 98389
+  image: /images/cards/card__война_стихий_125.png
+  name: Троллок
+  number: '125'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98390:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-2-3
+  description: Вилохвосты Уорлога из года в год тревожат своими налётами жителей эльфийских
+    деревень.
+  fraction: Болота
+  health: '8'
+  id: 98390
+  image: /images/cards/card__война_стихий_126.png
+  name: Вилохвост
+  number: '126'
+  rarity: Необычная
+  set: Война стихий
+  stamina: null
+98391:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 1-2-3
+  description: Выбравшаяся из омута тварь росла с каждой минутой, пока не стала размером
+    с небольшой дом.
+  fraction: Болота
+  health: '11'
+  id: 98391
+  image: /images/cards/card__война_стихий_127.png
+  name: Исхарская ненасыть
+  number: '127'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98392:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: '2'
+  description: null
+  fraction: Болота
+  health: '10'
+  id: 98392
+  image: /images/cards/card__война_стихий_128.png
+  name: Тролль
+  number: '128'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98393:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 1-1-2
+  description: null
+  fraction: Болота
+  health: '8'
+  id: 98393
+  image: /images/cards/card__война_стихий_129.png
+  name: Ундина
+  number: '129'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98394:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: '1'
+  description: null
+  fraction: Болота
+  health: '9'
+  id: 98394
+  image: /images/cards/card__война_стихий_130.png
+  name: Королева топи
+  number: '130'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: null
+98395:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: '2'
+  description: null
+  fraction: Болота
+  health: '10'
+  id: 98395
+  image: /images/cards/card__война_стихий_131.png
+  name: Медуза Горгона
+  number: '131'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98396:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 3-3-4
+  description: null
+  fraction: Болота
+  health: '13'
+  id: 98396
+  image: /images/cards/card__война_стихий_132.png
+  name: Двухголовый тролль
+  number: '132'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98397:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 2-2-3
+  description: null
+  fraction: Болота
+  health: '13'
+  id: 98397
+  image: /images/cards/card__война_стихий_133.png
+  name: Морок
+  number: '133'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98398:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 3-3-4
+  description: Вонзив меч в плоть уриила, Таликс попытался выдернуть его, но не тут-то
+    было — клинок увяз намертво.
+  fraction: Болота
+  health: '12'
+  id: 98398
+  image: /images/cards/card__война_стихий_134.png
+  name: Уриил
+  number: '134'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98399:
+  cost:
+    count: '8'
+    quality: Золото
+  damage: 3-4-5
+  description: null
+  fraction: Болота
+  health: '14'
+  id: 98399
+  image: /images/cards/card__война_стихий_135.png
+  name: Древний огр
+  number: '135'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98400:
+  cost:
+    count: '9'
+    quality: Золото
+  damage: 2-3-3
+  description: null
+  fraction: Болота
+  health: '13'
+  id: 98400
+  image: /images/cards/card__война_стихий_136.png
+  name: Гидра
+  number: '136'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98401:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-2
+  description: Санкторум попытался сделать шаг назад, прикрывшись щитом, но пошатнулся
+    и упал. Чёрные крылья самой смерти сомкнулись над ним.
+  fraction: Тьма
+  health: '5'
+  id: 98401
+  image: /images/cards/card__война_стихий_137.png
+  name: Вестник мора
+  number: '137'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98402:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-2-2
+  description: метанию
+  fraction: Тьма
+  health: '5'
+  id: 98402
+  image: /images/cards/card__война_стихий_138.png
+  name: Огненный имп
+  number: '138'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98403:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: В существование вампиров многие не верят ровно до тех пор, пока не
+    почувствуют, как им в шею вонзаются клыки.
+  fraction: Тьма
+  health: '9'
+  id: 98403
+  image: /images/cards/card__война_стихий_139.png
+  name: Вампир
+  number: '139'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98404:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: '2'
+  description: Ведьмы слуа испепеляют жертв тёмной энергией, которую черпают из их
+    же крови.
+  fraction: Тьма
+  health: '8'
+  id: 98404
+  image: /images/cards/card__война_стихий_140.png
+  name: Ведьма слуа
+  number: '140'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98405:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 2-3-3
+  description: Сырая земля разверзлась, и из неё выбрался мёртвый всадник в ржавой,
+    покрытой плесенью броне.
+  fraction: Тьма
+  health: '7'
+  id: 98405
+  image: /images/cards/card__война_стихий_141.png
+  name: Моровой всадник
+  number: '141'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98406:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: Горе унгару, попавшему в застенки крепости Ригорн. Тюремщицы-суккубы,
+    хозяйничающие там, не успокоятся, пока не выведают все секреты своих жертв.
+  fraction: Тьма
+  health: '7'
+  id: 98406
+  image: /images/cards/card__война_стихий_142.png
+  name: Суккуб-истязатель
+  number: '142'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98407:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 3-3-3
+  description: null
+  fraction: Тьма
+  health: '10'
+  id: 98407
+  image: /images/cards/card__война_стихий_143.png
+  name: Возница
+  number: '143'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98408:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-2
+  description: Лишь отчаяние и безысходность звучат в звуках её горна.
+  fraction: Тьма
+  health: '9'
+  id: 98408
+  image: /images/cards/card__война_стихий_144.png
+  name: Герольд мрака
+  number: '144'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98409:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: null
+  fraction: Тьма
+  health: '10'
+  id: 98409
+  image: /images/cards/card__война_стихий_145.png
+  name: Демон зависти
+  number: '145'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98410:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Тьма
+  health: '7'
+  id: 98410
+  image: /images/cards/card__война_стихий_146.png
+  name: Керсамская знать
+  number: '146'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98411:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: null
+  fraction: Тьма
+  health: '7'
+  id: 98411
+  image: /images/cards/card__война_стихий_147.png
+  name: Повелитель мёртвых
+  number: '147'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98412:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-2-2
+  description: null
+  fraction: Тьма
+  health: '8'
+  id: 98412
+  image: /images/cards/card__война_стихий_148.png
+  name: Сшиватель плоти
+  number: '148'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98413:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-5
+  description: «Аланиэль, моя госпожа, пусть в жизни вместе быть нам не пришлось,
+    мы будем вечно вместе после смерти».
+  fraction: Тьма
+  health: '9'
+  id: 98413
+  image: /images/cards/card__война_стихий_149.png
+  name: Талион
+  number: '149'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98414:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-1-2
+  description: Никто не знает наверняка, куда увозит души павших его лодка, но, с
+    другой стороны, никто и не стремится узнавать.
+  fraction: Тьма
+  health: '8'
+  id: 98414
+  image: /images/cards/card__война_стихий_150.png
+  name: Харон
+  number: '150'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98415:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 1-2-2
+  description: Неуклюжие и медлительные зомби практически&nbsp;
+  fraction: Тьма
+  health: '11'
+  id: 98415
+  image: /images/cards/card__война_стихий_151.png
+  name: Зомби
+  number: '151'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98416:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-2-3
+  description: Храбрый унгар, будь осторожен, проходя мимо тёмных расщелин в пещерах
+    рунных кристаллов. Трезубцы пещерников разят в спину без промаха.
+  fraction: Тьма
+  health: '8'
+  id: 98416
+  image: /images/cards/card__война_стихий_152.png
+  name: Пещерник
+  number: '152'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98417:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Тьма
+  health: '10'
+  id: 98417
+  image: /images/cards/card__война_стихий_153.png
+  name: Сайкорон
+  number: '153'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98418:
+  cost:
+    count: '7'
+    quality: Серебро
+  damage: 2-3-5
+  description: null
+  fraction: Тьма
+  health: '8'
+  id: 98418
+  image: /images/cards/card__война_стихий_154.png
+  name: Мрачная дворянка
+  number: '154'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98419:
+  cost:
+    count: '7'
+    quality: Серебро
+  damage: 2-2-3
+  description: Умирая, воин пытался понять, каким образом демон вдруг оказался у него
+    за спиной...
+  fraction: Тьма
+  health: '7'
+  id: 98419
+  image: /images/cards/card__война_стихий_155.png
+  name: Рогатый демон
+  number: '155'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98420:
+  cost:
+    count: '4'
+    quality: Золото
+  damage: '0'
+  description: Когда метаморф осваивает очередную личину, коллекция на его посохе
+    пополняется новой фигуркой.
+  fraction: Тьма
+  health: '9'
+  id: 98420
+  image: /images/cards/card__война_стихий_156.png
+  name: Метаморф
+  number: '156'
+  rarity: Частая
+  set: Война стихий
+  stamina: null
+98421:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 1-1-2
+  description: null
+  fraction: Тьма
+  health: '7'
+  id: 98421
+  image: /images/cards/card__война_стихий_157.png
+  name: Лунная баньши
+  number: '157'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98422:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-3
+  description: null
+  fraction: Тьма
+  health: '12'
+  id: 98422
+  image: /images/cards/card__война_стихий_158.png
+  name: Уордак
+  number: '158'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98423:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-3
+  description: Чёрное пламя драккархов нельзя потушить ни водой, ни магией.
+  fraction: Тьма
+  health: '9'
+  id: 98423
+  image: /images/cards/card__война_стихий_159.png
+  name: Драккарх
+  number: '159'
+  rarity: Необычная
+  set: Война стихий
+  stamina: null
+98424:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-2-3
+  description: null
+  fraction: Тьма
+  health: '7'
+  id: 98424
+  image: /images/cards/card__война_стихий_160.png
+  name: Лилит и Эйдерик
+  number: '160'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98425:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-4
+  description: null
+  fraction: Тьма
+  health: '10'
+  id: 98425
+  image: /images/cards/card__война_стихий_161.png
+  name: Скелетный червь
+  number: '161'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98426:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-4
+  description: null
+  fraction: Тьма
+  health: '10'
+  id: 98426
+  image: /images/cards/card__война_стихий_162.png
+  name: Тварь
+  number: '162'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 2
+98427:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-2-3
+  description: null
+  fraction: Тьма
+  health: '8'
+  id: 98427
+  image: /images/cards/card__война_стихий_163.png
+  name: Хозяин склепа
+  number: '163'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98428:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 3-4-5
+  description: null
+  fraction: Тьма
+  health: '12'
+  id: 98428
+  image: /images/cards/card__война_стихий_164.png
+  name: Поганище
+  number: '164'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98429:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 3-4-4
+  description: Главную твердыню Тёмной стороны Лаара, замок-крепость Урангрунд, охраняли
+    элитные воины тьмы. Их чудовищно изменённые заклинаниями некромантов замка тела
+    не знали ни боли, ни усталости.
+  fraction: Тьма
+  health: '13'
+  id: 98429
+  image: /images/cards/card__война_стихий_165.png
+  name: Барака
+  number: '165'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98430:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 3-3-4
+  description: Говорят, что вурдалаки не боятся солнца и могут охотиться при свете
+    дня. Лишь священное пламя Сеггера способно причинить им вред.
+  fraction: Тьма
+  health: '13'
+  id: 98430
+  image: /images/cards/card__война_стихий_166.png
+  name: Вурдалак
+  number: '166'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 2
+98431:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 2-2-3
+  description: Тхель-Вэнн прицелился и трижды выстрелил в порождение тьмы. К его удивлению,
+    все стрелы ушли в небо.
+  fraction: Тьма
+  health: '13'
+  id: 98431
+  image: /images/cards/card__война_стихий_167.png
+  name: Мерцающий змей
+  number: '167'
+  rarity: Редкая
+  set: Война стихий
+  stamina: null
+98432:
+  cost:
+    count: '8'
+    quality: Золото
+  damage: 4-5-6
+  description: null
+  fraction: Тьма
+  health: '15'
+  id: 98432
+  image: /images/cards/card__война_стихий_168.png
+  name: Повелитель бездны
+  number: '168'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98433:
+  cost:
+    count: '9'
+    quality: Золото
+  damage: 4-5-7
+  description: null
+  fraction: Тьма
+  health: '14'
+  id: 98433
+  image: /images/cards/card__война_стихий_169.png
+  name: Властелин хаоса
+  number: '169'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98434:
+  cost:
+    count: '9'
+    quality: Золото
+  damage: '3'
+  description: null
+  fraction: Тьма
+  health: '16'
+  id: 98434
+  image: /images/cards/card__война_стихий_170.png
+  name: Демон жадности
+  number: '170'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: null
+98435:
+  cost:
+    count: '3'
+    quality: Серебро
+  damage: 1-1-2
+  description: «Может, эти сапоги немного тесноваты, но гораздо крепче моих».
+  fraction: Нейтральная
+  health: '5'
+  id: 98435
+  image: /images/cards/card__война_стихий_171.png
+  name: Мародёр
+  number: '171'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98436:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 2-2-3
+  description: null
+  fraction: Нейтральная
+  health: '7'
+  id: 98436
+  image: /images/cards/card__война_стихий_172.png
+  name: Ведающий запасами
+  number: '172'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98437:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Нейтральная
+  health: '7'
+  id: 98437
+  image: /images/cards/card__война_стихий_173.png
+  name: Ведунья Ордена
+  number: '173'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98438:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Нейтральная
+  health: '8'
+  id: 98438
+  image: /images/cards/card__война_стихий_174.png
+  name: Взрывная Мэри
+  number: '174'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98439:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Нейтральная
+  health: '7'
+  id: 98439
+  image: /images/cards/card__война_стихий_175.png
+  name: Крондак
+  number: '175'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98440:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 3-3-4
+  description: Говорят, что Архааль сумел добраться до затерянного среди торосов Йора
+    племени таргов лишь благодаря безумной отваге небольшого отряда наёмников из вольных
+    крепостей.
+  fraction: Нейтральная
+  health: '10'
+  id: 98440
+  image: /images/cards/card__война_стихий_176.png
+  name: Наёмник
+  number: '176'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98441:
+  cost:
+    count: '4'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Нейтральная
+  health: '8'
+  id: 98441
+  image: /images/cards/card__война_стихий_177.png
+  name: Следопыт
+  number: '177'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 2
+98442:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Нейтральная
+  health: '8'
+  id: 98442
+  image: /images/cards/card__война_стихий_178.png
+  name: Алвалинд
+  number: '178'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98443:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: Варвары степей верят, что ночь наступает из-за того, что солнце съедает
+    огромный жжраг.
+  fraction: Нейтральная
+  health: '10'
+  id: 98443
+  image: /images/cards/card__война_стихий_179.png
+  name: Жжраг
+  number: '179'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98444:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-2-3
+  description: null
+  fraction: Нейтральная
+  health: '8'
+  id: 98444
+  image: /images/cards/card__война_стихий_180.png
+  name: Линнет
+  number: '180'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 1
+98445:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-2-3
+  description: Не пытайтесь поймать Фортуну за её белый хвост.
+  fraction: Нейтральная
+  health: '8'
+  id: 98445
+  image: /images/cards/card__война_стихий_181.png
+  name: Ловец удачи
+  number: '181'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98446:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-2-3
+  description: null
+  fraction: Нейтральная
+  health: '8'
+  id: 98446
+  image: /images/cards/card__война_стихий_182.png
+  name: Матросы Аделаиды
+  number: '182'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98447:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Нейтральная
+  health: '9'
+  id: 98447
+  image: /images/cards/card__война_стихий_183.png
+  name: Дозор Форрендора
+  number: '183'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98448:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 1-1-2
+  description: null
+  fraction: Нейтральная
+  health: '9'
+  id: 98448
+  image: /images/cards/card__война_стихий_184.png
+  name: Отшельница
+  number: '184'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98449:
+  cost:
+    count: '5'
+    quality: Серебро
+  damage: 2-3-3
+  description: null
+  fraction: Нейтральная
+  health: '8'
+  id: 98449
+  image: /images/cards/card__война_стихий_185.png
+  name: Шакси
+  number: '185'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98450:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-3-4
+  description: Опаснее бесчестного пирата может быть только команда бесчестных пиратов.
+  fraction: Нейтральная
+  health: '12'
+  id: 98450
+  image: /images/cards/card__война_стихий_186.png
+  name: Головорез
+  number: '186'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98451:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Нейтральная
+  health: '10'
+  id: 98451
+  image: /images/cards/card__война_стихий_187.png
+  name: Лазутчица
+  number: '187'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98452:
+  cost:
+    count: '6'
+    quality: Серебро
+  damage: 2-3-4
+  description: null
+  fraction: Нейтральная
+  health: '10'
+  id: 98452
+  image: /images/cards/card__война_стихий_188.png
+  name: Паладин Алламора
+  number: '188'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98453:
+  cost:
+    count: '8'
+    quality: Серебро
+  damage: 2-4-6
+  description: null
+  fraction: Нейтральная
+  health: '13'
+  id: 98453
+  image: /images/cards/card__война_стихий_189.png
+  name: Воин храма
+  number: '189'
+  rarity: Частая
+  set: Война стихий
+  stamina: 2
+98454:
+  cost:
+    count: '2'
+    quality: Золото
+  damage: 0-1-2
+  description: null
+  fraction: Нейтральная
+  health: '3'
+  id: 98454
+  image: /images/cards/card__война_стихий_190.png
+  name: Вольный воитель
+  number: '190'
+  rarity: Необычная
+  set: Война стихий
+  stamina: null
+98455:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 1-2-3
+  description: Ассасины ордена Койаров не признают честного боя... Многие великие
+    воины Лаара пали от их предательских ударов.
+  fraction: Нейтральная
+  health: '7'
+  id: 98455
+  image: /images/cards/card__война_стихий_191.png
+  name: Ассасин
+  number: '191'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98456:
+  cost:
+    count: '5'
+    quality: Золото
+  damage: 2-3-3
+  description: null
+  fraction: Нейтральная
+  health: '10'
+  id: 98456
+  image: /images/cards/card__война_стихий_192.png
+  name: Ревнитель Сеггера
+  number: '192'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98457:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: '2'
+  description: null
+  fraction: Нейтральная
+  health: '12'
+  id: 98457
+  image: /images/cards/card__война_стихий_193.png
+  name: Арацент
+  number: '193'
+  rarity: Необычная
+  set: Война стихий
+  stamina: null
+98458:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 1-1-2
+  description: null
+  fraction: Нейтральная
+  health: '7'
+  id: 98458
+  image: /images/cards/card__война_стихий_194.png
+  name: Аристократка
+  number: '194'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98459:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 3-4-5
+  description: Когда стрела вонзилась в плечо, берсерк взревел и поднял топор — он
+    не почувствовал боли, лишь желание убивать.
+  fraction: Нейтральная
+  health: '10'
+  id: 98459
+  image: /images/cards/card__война_стихий_195.png
+  name: Берсерк
+  number: '195'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98460:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-4
+  description: null
+  fraction: Нейтральная
+  health: '10'
+  id: 98460
+  image: /images/cards/card__война_стихий_196.png
+  name: Гермет
+  number: '196'
+  rarity: Необычная
+  set: Война стихий
+  stamina: 1
+98461:
+  cost:
+    count: '6'
+    quality: Золото
+  damage: 2-3-5
+  description: «Сражайтесь, смертные! Ваша ненависть друг к другу питает меня!»
+  fraction: Нейтральная
+  health: '10'
+  id: 98461
+  image: /images/cards/card__война_стихий_197.png
+  name: Эорвал
+  number: '197'
+  rarity: Частая
+  set: Война стихий
+  stamina: 1
+98462:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 1-2-3
+  description: null
+  fraction: Нейтральная
+  health: '8'
+  id: 98462
+  image: /images/cards/card__война_стихий_198.png
+  name: Варлок
+  number: '198'
+  rarity: Редкая
+  set: Война стихий
+  stamina: 1
+98463:
+  cost:
+    count: '7'
+    quality: Золото
+  damage: 2-3-4
+  description: null
+  fraction: Нейтральная
+  health: '12'
+  id: 98463
+  image: /images/cards/card__война_стихий_199.png
+  name: Тич
+  number: '199'
+  rarity: Ультраредкая
+  set: Война стихий
+  stamina: 2
+98464:
+  cost:
+    count: '9'
+    quality: Золото
+  damage: 5-6-7
+  description: «Вот сейчас доем эту ножку и пойду искать Хигарта».
+  fraction: Нейтральная
+  health: '24'
+  id: 98464
+  image: /images/cards/card__война_стихий_200.png
+  name: Волот
+  number: '200'
+  rarity: Ультраредкая
   set: Война стихий
   stamina: 1
